@@ -24,7 +24,7 @@ date: "May 5, 2026"
 
 ## 1. Executive Summary
 
-Power Church is a growing Pentecostal congregation currently meeting at 1344 SE 10th Avenue, Amarillo. Under the leadership of Pastor Manny De Los Santos, the church has reached the operational ceiling of its current facility and is acquiring the former United Artists movie theater at 8275 W Amarillo Blvd to convert into a multi-use sanctuary, classroom, and community-event facility.
+Power Church is a growing congregation currently meeting at 1344 SE 10th Avenue, Amarillo. Founded in 2012 by Pastor Manny De Los Santos, the church has grown from fewer than 30 members to one of the city's largest congregations, with documented average attendance in the 1,700–2,000 range. Power Church has reached the operational ceiling of its current facility and is acquiring the former United Artists movie theater at 8275 W Amarillo Blvd to convert into a multi-use sanctuary, classroom, and community-event facility.
 
 The transaction is straightforward:
 
@@ -49,9 +49,9 @@ Power Church's request is a clean acquisition mortgage: low LTV, established 501
 | Pastor | Manny De Los Santos |
 | Current Address | 1344 SE 10th Avenue, Amarillo, TX |
 | EIN / Tax Status | 501(c)(3) — federal income tax exempt; subject to Texas Tax Code §11.20 religious property exemption |
-| Years of Operation | [TO INSERT — Manny has shepherded the congregation for several years] |
-| Average Sunday Attendance | [TO INSERT] |
-| Average Weekly Services | Sundays 9:30 AM, 11:00 AM, 1:00 PM, 5:00 PM; Wednesday 7:00 PM |
+| Years of Operation | Founded 2012; 14 years under Pastor Manny De Los Santos's leadership |
+| Average Sunday Attendance | Approximately 1,700–2,000 (per ABC 7 Amarillo coverage, 2022; current 2026 figure to be confirmed) |
+| Average Weekly Services | Sundays 8:30 AM, 10:00 AM, 11:30 AM, 1:00 PM; Wednesday 7:00 PM (per powerchurchamarillo.com) |
 
 ### Financial Profile (Trailing 12 Months)
 
@@ -69,7 +69,7 @@ The church owns the 1344 SE 10th Avenue property outright. Per broker valuation 
 
 ### Mission Alignment for Bank
 
-Power Church has been an active and consistent presence in the Amarillo community, faithfully shepherding members and serving the city through worship, discipleship, and outreach under Pastor Manny De Los Santos's leadership. *[TO INSERT — short list of Power Church's specific local ministries, partnerships, and community programs.]*
+Power Church has been an active and consistent presence in the Amarillo community since Pastor Manny De Los Santos founded the congregation in 2012, growing it from fewer than 30 members into one of the city's fastest-growing churches with documented average attendance in the range of 1,700 to 2,000. From its current location at 1344 SE 10th Avenue, the church operates a weekly Sunday food pantry through a partnership with the **High Plains Food Bank**; hosts the annual *Barrio Bash* community block party that drew an estimated 3,000 attendees in 2017 in partnership with the City of Amarillo, Potter County, and the Amarillo Police Department; and launched the *Barrio Community Watch* crime-prevention program with APD in 2017. In 2015, Pastor De Los Santos founded the related 501(c)(3) **Amarillo Barrio Community Development** (EIN 47-4527312, IRS-recognized 2019) to extend that work. Power Church has hosted the Amarillo Domestic Violence Coalition's *Faith Community Summit*, organized a *Healing Prayer Walk* in March 2026 in response to neighborhood violence, and consistently participated in citywide multi-church initiatives. This nine-plus-year track record of documented service, partnership with municipal government and law enforcement, and verifiable nonprofit infrastructure is the foundation Power Church now seeks to expand at 8275 W Amarillo Blvd. (Coverage cited: NewsChannel 10, ABC 7 Amarillo, MyHighPlains/KAMR, and Brick & Elm magazine, 2017–2026; full source list available on request.)
 
 The **Pastors Tribe Initiative** is Pastor Manny's heart for raising up local pastors and ministry leaders through coaching, resources, and leadership-development programming. The initiative is in active development for launch at the Pastors Tribe Conference on July 15, 2026, and is designed to strengthen the Amarillo-area pastoral community by equipping leaders to grow healthy churches and serve their congregations more effectively.
 
