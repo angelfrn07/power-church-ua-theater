@@ -1,142 +1,129 @@
-# A Letter and Proposal Regarding 8275 W Amarillo Blvd
+<div style="text-align:center; font-family: Garamond, Georgia, serif;">
+<div style="font-size:14pt; font-weight:700; letter-spacing:0.04em;">POWER CHURCH</div>
+<div style="font-size:10pt; margin-top:2pt;">1344 SE 10th Avenue · Amarillo, Texas 79102</div>
+</div>
 
-**To:** Deeter Prater, Llano Realty (and the seller of 8275 W Amarillo Blvd)
-**From:** Pastor Manny De Los Santos and the Power Church Building Committee
-**On behalf of:** Power Church, Amarillo
-**Date:** May 4, 2026
+<div style="text-align:right; margin-top:24pt;">May 4, 2026</div>
 
----
+<div style="margin-top:18pt;">
+Mr. Deeter Prater<br/>
+Llano Realty<br/>
+Amarillo, Texas
+</div>
+
+<div style="margin-top:14pt;"><strong>Re: 8275 W Amarillo Blvd, Amarillo, Texas — Acquisition Proposal</strong></div>
 
 Dear Mr. Prater,
 
-We hope this finds you well. We're writing to put a serious offer on the table for 8275 W Amarillo Blvd, the former United Artists theater you have listed.
+Thank you for the time you've already given us in considering Power Church as a buyer for the former United Artists theater at 8275 W Amarillo Blvd. We are writing to formally present our terms and to request a brief meeting with you and the seller at your earliest convenience.
 
-We're Power Church, a growing congregation currently meeting at 1344 SE 10th Avenue. Pastor Manny has shepherded our community for several years now, and the people who walk through our doors on Sunday mornings have outgrown the building we're in. We've been praying about the right next home for some time. When we walked into your listing and saw the auditorium, the lobby, the kitchen footprint, the classrooms behind the screens, we both said the same thing: this could be it.
+Power Church is a 501(c)(3) religious nonprofit currently meeting at 1344 SE 10th Avenue. Under the leadership of Senior Pastor Manny De Los Santos, the congregation has grown beyond the operational ceiling of its current facility, and the Building Committee has been working with Amarillo National Bank to identify a permanent home that will serve our members and the wider Amarillo community for the long term. The subject property is the building we believe is the right next chapter for both Power Church and for the asset itself.
 
-Before we get into terms, we want to say something about the building itself.
+A movie theater in its prime is one of the most communal spaces a town can offer — a gathering place that brings people together for a shared experience that ties them to the place and to one another. That is not so different from the role a church plays in a community. We do not see your client's building as a vacant property that has lost its tenant. We see it as a community gathering place that is waiting for its next steward, and we believe Power Church is uniquely positioned to be that steward.
 
-A movie theater in its prime is one of the most communal spaces a town can have. People come together. They laugh together. They cry together. They share an experience that ties them to the place and to each other. That's not so far from what a church does. We see your seller's building not as a vacant box that lost its tenant, but as a community gathering place that's waiting for its next chapter. The story of that building isn't over. It just needs the right next steward.
+***
 
-We believe Power Church can be that steward.
+***Intended Use of the Property***
 
----
+Upon acquisition, Power Church intends to operate 8275 W Amarillo Blvd as a multi-use community and worship facility, including:
 
-## What we want to do with the building
+- A primary sanctuary in the main auditorium, seating approximately 1,200 to 1,400 attendees, used for Sunday services, midweek services, and special events.
+- A lobby café open during weekday morning hours, serving the surrounding business district and the church family.
+- A wedding and event venue available evenings and weekends to families both inside and outside the congregation.
+- Classrooms and conference rooms in the former screen rooms, used for children's ministry on Sundays and rented to local nonprofits, businesses, and ministries during weekdays.
+- Youth and after-school programming for families in the surrounding neighborhood.
+- Office and small-suite leasing for Christian counselors, ministry partners, and small businesses.
+- A media studio for podcasting, recording, and content production.
 
-If we acquire 8275 W Amarillo Blvd, here's what the next two years look like:
+The result is a vacant property returned to active, community-serving use seven days a week, with renovation capital committed to bringing the building back to a fully operational standard within the first eighteen months of ownership.
 
-- **Sanctuary** in the main auditorium, seating roughly 1,200 to 1,400, used Sunday mornings, Wednesday evenings, and special services
-- **Lobby cafe** open weekday mornings serving the surrounding business district and the church family
-- **Wedding and event venue** in evenings and weekends, available to families inside and outside the congregation
-- **Classrooms and conference rooms** in the former screen rooms, used for kids' ministry on Sundays and rented to local nonprofits, businesses, and ministries during the week
-- **Youth and after-school programs** for the families in the neighborhood
-- **Office and small-suite leasing** for Christian counselors, ministry partners, and small businesses
-- **Media studio** for podcasting, recording, and content production
+***
 
-The building goes from vacant to producing income seven days a week. The investment that goes back into the property over the first 18 months brings the asset back to a fully active, community-anchoring use. Whatever the building meant to its previous life, it gets to mean even more in its next one.
+***Banking Relationship***
 
----
+Power Church's banking relationship is with Amarillo National Bank ("ANB"). ANB is the church's lender on this transaction and has reviewed our pro forma projections and the financing structure. The acquisition itself is the element we wish to discuss with you and your client, since the closing structure that works best for the seller will allow us to proceed most efficiently. We have modeled two structures that we believe will close this transaction quickly and on terms that are fair to both parties.
 
-## Where we are with the bank
+***
 
-We've been working with Amarillo National Bank (ANB), our church's banking relationship and the lender on the acquisition mortgage and the renovation construction loan. ANB has reviewed our pro forma and is in active discussions with the church on the financing structure. The acquisition itself is the piece we want to discuss with you and your seller, because the structure that gets this deal across the finish line is the structure that works for everyone.
+***Proposed Structure 1 — Seller Financing on the Acquisition***
 
-We've modeled this carefully. Two structures could close this transaction quickly and fairly:
+| Item | Term |
+|---|---|
+| Effective purchase price | $3,500,000 to $4,000,000 (a $1.5M to $2M concession from the $5,500,000 list price, reflecting the 30-month vacancy and the special-purpose conversion work the buyer absorbs) |
+| Down payment | Negotiable; preference for $0 down with reasonable earnest money |
+| Seller carryback note | $2,000,000, interest-only at 6.0% per annum, twenty-four-month balloon |
+| Bank construction loan (renovation) | Approximately $2,000,000 from Amarillo National Bank, drawn progressively against renovation milestones (final amount subject to general-contractor bid and ANB underwriting) |
+| Refinance and seller payoff | At completion of renovation (approximately month 13 to 15), Power Church refinances both notes into a single 25-year permanent commercial mortgage; seller receives full cash payoff |
 
----
+*Benefits to the seller:* a defined exit on a 30-month vacant asset; a predictable interest payment of approximately $10,000 per month from closing through balloon; a full cash payoff within twenty-four months on a known timeline; and a stable nonprofit steward for the building's next chapter.
 
-## Proposed Structure 1: Seller Financing on the Acquisition
+***
 
-**Effective purchase price:** $3,500,000 to $4,000,000 (a $1.5M to $2M concession from the $5.5M asking price, reflecting the 2.5-year vacancy and the special-purpose conversion work the buyer takes on)
+***Proposed Structure 2 — Master Lease with Option to Purchase***
 
-**Down payment:** Negotiable, with a preference for $0 down and a small earnest money deposit
+| Item | Term |
+|---|---|
+| Lease term | Twelve to eighteen months at $3.00 per square foot per year, gross, with full rent abatement during the construction-renovation period (industry standard when the tenant's improvements substantially upgrade the asset) |
+| Commencement of full rent | Certificate of occupancy |
+| Bank construction loan (renovation) | Approximately $2,000,000 from Amarillo National Bank, used during the lease period for the renovation (final amount subject to general-contractor bid and ANB underwriting) |
+| Option to purchase | Power Church holds an option to acquire the property at $3,800,000, exercisable at lease end upon refinance to permanent financing |
 
-**Seller financing:** $2,000,000 carried by the seller, interest-only at 6.0% per year, with a balloon at 24 months
+*Benefits to the seller:* the same eventual outcome (full cash payoff at refinance), with a lease income stream in the months between certificate of occupancy and option exercise; a tenant fully invested in the asset (Power Church will deploy approximately $2,000,000 of borrowed renovation capital into the building); a guaranteed buyer at a known price on a known timeline; and the option to retain the asset, with $2,000,000 of fresh improvements in place, should the buyer not exercise.
 
-**Bank construction loan:** approximately $2,000,000 from Amarillo National Bank (ANB), funded progressively as renovation milestones are met (final amount subject to GC bid and ANB underwriting)
+***
 
-**Refinance and seller payoff:** At completion of renovation (approximately month 13 to 15), Power Church refinances both the acquisition note and the construction loan into a single 25-year permanent commercial mortgage. Seller is paid in full.
+***Rationale for Both Parties***
 
-**What this gives the seller:**
-- Movement on a 2.5-year vacancy and a clear path to full payoff
-- A predictable monthly interest payment of $10,000 starting at closing
-- A capital event (full payoff) within 24 months, on a defined timeline
-- A quality steward for the building's next chapter
+*For the seller.* A 30-month vacancy is replaced by a known, financed counterparty with a defined exit. Both structures end with full cash payoff on a defined timeline. The carryback structure delivers interest-only cash flow during the period the seller is the largest stakeholder; the master-lease structure delivers rent during the post-renovation lease window if the seller prefers to retain the asset longer.
 
----
+*For Power Church.* A move-in-ready facility at a price that allows the church to serve more people without being over-leveraged on debt service. A renovation loan from our existing banking relationship. A defined timeline that the Building Committee can responsibly plan around.
 
-## Proposed Structure 2: Master Lease with Option to Buy
+*For the community.* The building serves Amarillo seven days a week rather than sitting dark — wedding receptions, business conferences, Sunday services, weekday coffee, children's programs, and counseling offices, anchored by a stable nonprofit congregation with every long-term reason to care for the asset.
 
-**Lease structure:** 12 to 18 month master lease at $3 per square foot per year (gross), with full rent abatement during the construction-renovation period (industry standard when tenant improvements substantially upgrade the asset)
+***
 
-**Lease commencement of full payments:** At certificate of occupancy
+***Requested Next Step***
 
-**Bank construction loan:** approximately $2,000,000 from Amarillo National Bank (ANB), used during the lease period for the renovation (final amount subject to GC bid and ANB underwriting)
+We respectfully request a thirty-minute meeting with you and the seller, at your earliest convenience, to discuss which of the two structures the seller is open to. We are not married to either; whichever path your client prefers is the path we will pursue. Once we know that answer, we can move quickly to lock terms with Amarillo National Bank and present a clean offer with no surprises.
 
-**Option to purchase:** Power Church holds an option to acquire the property at $3,800,000 at lease end, exercisable upon refinance to permanent financing
+We are available this week and the next. We are happy to meet at your office, at the property, or to host you for coffee at our current campus on SE 10th Avenue — whatever is most convenient for you.
 
-**What this gives the seller:**
-- Same outcome (full payoff at refinance), with a lease income stream in the months between certificate of occupancy and option exercise
-- A tenant fully invested in the asset (we plan to deploy roughly $2 million of borrowed renovation capital into your building, subject to final GC bid)
-- A guaranteed buyer at a known price, on a known timeline
-- The option to retain the building if the buyer walks (with approximately $2 million of fresh improvements in place, the property's lease value to the next tenant is materially higher)
+***
 
----
-
-## Why we believe this works for everyone
-
-**For the seller:** A 2.5-year vacancy gets replaced by a known counterparty with bank backing and a defined exit. Either structure ends with a full cash payoff on a defined timeline. The carryback option is interest-only during the period the seller is the largest stakeholder; the rents under the lease structure provide cash flow if the seller wants to retain the asset longer.
-
-**For us:** A move-in-ready facility at a price that lets the church serve more people without being house-poor on debt service. A renovation loan from a bank we already know and trust. A timeline we can plan to.
-
-**For the community:** The building serves Amarillo seven days a week instead of sitting dark. Wedding receptions, business conferences, Sunday services, weekday coffee, kids' programs, counseling offices, all under one roof, all anchored by a stable nonprofit congregation that has every reason to care for the asset for the long haul.
-
----
-
-## What we need next
-
-We'd like to sit down with you and the seller for a 30-minute conversation. Whichever structure makes more sense to your seller is the structure we'll move forward on. We're not married to either. We just need to know which path the seller is open to so we can lock terms with Amarillo National Bank (ANB) and bring you a clean offer with no surprises.
-
-If it helps, we can come to your office, meet at the property, or invite you to coffee at our current campus on SE 10th. Whatever's easiest for you.
-
-We're available this week and next, and we believe time matters here. The longer the building sits vacant, the more it costs your seller. The longer we wait, the longer our families worship in a building that's outgrown them.
-
----
-
-## Quick reference
+***Summary of Key Terms***
 
 | Item | Detail |
 |---|---|
-| Property | 8275 W Amarillo Blvd, Amarillo TX 79124 |
-| Listing | Llano Realty (Deeter Prater) |
+| Subject property | 8275 W Amarillo Blvd, Amarillo, Texas 79124 |
+| Listing brokerage | Llano Realty (Mr. Deeter Prater) |
 | List price | $5,500,000 |
-| Buyer | Power Church (501(c)(3) religious organization) |
+| Proposed buyer | Power Church (Texas 501(c)(3) religious nonprofit) |
 | Buyer representatives | Pastor Manny De Los Santos and the Power Church Building Committee |
-| Bank relationship | Amarillo National Bank (ANB) — acquisition mortgage and construction-loan discussions in progress |
-| Renovation budget (estimate) | ~$2,000,000 (subject to final GC bid) |
-| Renovation use | Sanctuary buildout, kitchen, classrooms, offices, lobby cafe, AV, ADA |
-| Renovation timeline | 12 months |
-| Acquisition timing | Within 90 days of agreed terms |
+| Banking relationship | Amarillo National Bank — acquisition mortgage and construction-loan discussions in progress |
+| Renovation budget (estimate) | Approximately $2,000,000, subject to final general-contractor bid |
+| Anticipated renovation scope | Sanctuary buildout, commercial kitchen, classrooms, offices, lobby café, audio-visual, ADA fixes |
+| Renovation timeline | Twelve months |
+| Acquisition timing | Within ninety days of agreed terms |
 
----
+***
 
-## Closing
+This decision is significant for everyone involved, and we do not take it lightly. We want this to be a transaction your client looks back on and feels good about — not only because the numbers worked, but because the building went on to do something meaningful for a community we all share.
 
-This is a significant decision for everyone involved. We don't take it lightly. We want this to be a transaction the seller looks back on and feels good about, not just because the numbers worked, but because the building went on to do something good in a town we all share.
+We would welcome the opportunity to talk further at your earliest convenience. Please reach us by phone or email.
 
-Whatever path you and your seller prefer, we'd like to talk. Please call or email at your convenience.
+Respectfully,
 
-With gratitude and respect,
+<div style="margin-top:24pt;">
+<strong>Pastor Manny De Los Santos</strong><br/>
+<em>Senior Pastor, Power Church</em><br/>
+<span style="font-size:10pt;">[cell phone] · [email]</span>
+</div>
 
-**Pastor Manny De Los Santos**
-Senior Pastor, Power Church
-[cell phone] · [pastor email]
+<div style="margin-top:18pt;">
+<strong>The Power Church Building Committee</strong><br/>
+<span style="font-size:10pt;">1344 SE 10th Avenue, Amarillo, Texas 79102</span>
+</div>
 
-**The Power Church Building Committee**
-1344 SE 10th Avenue, Amarillo, TX 79102
-
-> *If the seller would like a member of the Building Committee with commercial real estate experience to walk the property or facilitate due diligence directly, Angel Mendoza (Building Committee, My Royal Estates) has volunteered to assist as a representative of Power Church on those operational items.*
-
----
-
-*Power Church | 1344 SE 10th Ave | Amarillo, TX 79102*
+<div style="margin-top:18pt; font-size:10pt; font-style:italic; color:#333;">
+Should the seller wish a member of the Building Committee with commercial-real-estate experience to walk the property or to facilitate operational due-diligence items directly, Mr. Angel Mendoza (Building Committee, My Royal Estates) has volunteered to assist as a representative of Power Church on those operational matters.
+</div>
