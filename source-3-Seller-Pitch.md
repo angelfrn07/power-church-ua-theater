@@ -1,7 +1,7 @@
 # A Letter and Proposal Regarding 8275 W Amarillo Blvd
 
 **To:** Deeter Prater, Llano Realty (and the seller of 8275 W Amarillo Blvd)
-**From:** Pastor Manny De Los Santos and Angel Mendoza
+**From:** Pastor Manny De Los Santos and the Power Church Building Committee
 **On behalf of:** Power Church, Amarillo
 **Date:** May 4, 2026
 
@@ -39,7 +39,7 @@ The building goes from vacant to producing income seven days a week. The investm
 
 ## Where we are with the bank
 
-We've been working with Senior Vice President Jerome Pratt at First State Bank Spearman. He's familiar with our sponsor, Angel Mendoza, and he's already in conversation with us about a $2 million construction loan for the renovation. The acquisition itself is the piece we want to discuss with you and your seller, because the structure that gets this deal across the finish line is the structure that works for everyone.
+We've been working with Amarillo National Bank (ANB), our church's banking relationship and the lender on the acquisition mortgage and the renovation construction loan. ANB has reviewed our pro forma and is in active discussions with the church on the financing structure. The acquisition itself is the piece we want to discuss with you and your seller, because the structure that gets this deal across the finish line is the structure that works for everyone.
 
 We've modeled this carefully. Two structures could close this transaction quickly and fairly:
 
@@ -53,7 +53,7 @@ We've modeled this carefully. Two structures could close this transaction quickl
 
 **Seller financing:** $2,000,000 carried by the seller, interest-only at 6.0% per year, with a balloon at 24 months
 
-**Bank construction loan:** $2,000,000 from First State Bank Spearman, funded progressively as renovation milestones are met
+**Bank construction loan:** approximately $2,000,000 from Amarillo National Bank (ANB), funded progressively as renovation milestones are met (final amount subject to GC bid and ANB underwriting)
 
 **Refinance and seller payoff:** At completion of renovation (approximately month 13 to 15), Power Church refinances both the acquisition note and the construction loan into a single 25-year permanent commercial mortgage. Seller is paid in full.
 
@@ -71,15 +71,15 @@ We've modeled this carefully. Two structures could close this transaction quickl
 
 **Lease commencement of full payments:** At certificate of occupancy
 
-**Bank construction loan:** $2,000,000 from First State Bank Spearman, used during the lease period for the renovation
+**Bank construction loan:** approximately $2,000,000 from Amarillo National Bank (ANB), used during the lease period for the renovation (final amount subject to GC bid and ANB underwriting)
 
 **Option to purchase:** Power Church holds an option to acquire the property at $3,800,000 at lease end, exercisable upon refinance to permanent financing
 
 **What this gives the seller:**
 - Same outcome (full payoff at refinance), with a lease income stream in the months between certificate of occupancy and option exercise
-- A tenant fully invested in the asset (we are spending $2 million of borrowed money to improve your building)
+- A tenant fully invested in the asset (we plan to deploy roughly $2 million of borrowed renovation capital into your building, subject to final GC bid)
 - A guaranteed buyer at a known price, on a known timeline
-- The option to retain the building if the buyer walks (with $2 million of fresh improvements in place, the property's lease value to the next tenant is materially higher)
+- The option to retain the building if the buyer walks (with approximately $2 million of fresh improvements in place, the property's lease value to the next tenant is materially higher)
 
 ---
 
@@ -95,7 +95,7 @@ We've modeled this carefully. Two structures could close this transaction quickl
 
 ## What we need next
 
-We'd like to sit down with you and the seller for a 30-minute conversation. Whichever structure makes more sense to your seller is the structure we'll move forward on. We're not married to either. We just need to know which path the seller is open to so we can lock terms with First State Bank Spearman and bring you a clean offer with no surprises.
+We'd like to sit down with you and the seller for a 30-minute conversation. Whichever structure makes more sense to your seller is the structure we'll move forward on. We're not married to either. We just need to know which path the seller is open to so we can lock terms with Amarillo National Bank (ANB) and bring you a clean offer with no surprises.
 
 If it helps, we can come to your office, meet at the property, or invite you to coffee at our current campus on SE 10th. Whatever's easiest for you.
 
@@ -111,9 +111,9 @@ We're available this week and next, and we believe time matters here. The longer
 | Listing | Llano Realty (Deeter Prater) |
 | List price | $5,500,000 |
 | Buyer | Power Church (501(c)(3) religious organization) |
-| Buyer representatives | Pastor Manny De Los Santos, Angel Mendoza (Building Committee) |
-| Bank relationship | First State Bank Spearman (SVP Jerome Pratt, $2M construction loan in discussion) |
-| Renovation budget | $2,000,000 |
+| Buyer representatives | Pastor Manny De Los Santos and the Power Church Building Committee |
+| Bank relationship | Amarillo National Bank (ANB) — acquisition mortgage and construction-loan discussions in progress |
+| Renovation budget (estimate) | ~$2,000,000 (subject to final GC bid) |
 | Renovation use | Sanctuary buildout, kitchen, classrooms, offices, lobby cafe, AV, ADA |
 | Renovation timeline | 12 months |
 | Acquisition timing | Within 90 days of agreed terms |
@@ -130,12 +130,12 @@ With gratitude and respect,
 
 **Pastor Manny De Los Santos**
 Senior Pastor, Power Church
-[phone] | [email]
+[cell phone] · [pastor email]
 
-**Angel Mendoza**
-Building Committee, Power Church
-Crown House Texas Partners
-[phone] | [email]
+**The Power Church Building Committee**
+1344 SE 10th Avenue, Amarillo, TX 79102
+
+> *If the seller would like a member of the Building Committee with commercial real estate experience to walk the property or facilitate due diligence directly, Angel Mendoza (Building Committee, My Royal Estates) has volunteered to assist as a representative of Power Church on those operational items.*
 
 ---
 

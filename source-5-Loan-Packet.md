@@ -451,7 +451,7 @@ This is standard relationship banking and Power Church welcomes the structure.
 | Pastor / Authorized Signatory | Manny De Los Santos | [TO INSERT] |
 | Building Committee Chair | [TO INSERT] | [TO INSERT] |
 | Volunteer Treasurer / Bookkeeper | [TO INSERT] | [TO INSERT] |
-| Sponsor / Building Committee Member | Angel Mendoza | angel@myroyal-estates.com · (806) [TO INSERT] |
+| Building Committee Liaison | Power Church Building Committee | [TO INSERT — committee email] |
 | Listing Agent (seller-side) | Deeter Prater | Llano Realty, Amarillo |
 | Title Company | Julie Wilkinson | American Land Title |
 
@@ -495,6 +495,4 @@ Pastor Manny De Los Santos
 Power Church
 1344 SE 10th Avenue, Amarillo, TX 79101
 
-**On behalf of the Building Committee:**
-Angel Mendoza · Building Committee Sponsor
-[TO INSERT — additional committee members]
+**On behalf of the Power Church Building Committee.**

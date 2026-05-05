@@ -29,4 +29,4 @@ Per LOI dated 5/3/2026: Power Church purchases the 83,422 sqft former UA theater
 ## Contact
 
 **Power Church** — Pastor Manny De Los Santos, 1344 SE 10th Avenue, Amarillo, TX
-**Building Committee** — Angel Mendoza, sponsor
+**Building Committee** — Power Church Building Committee

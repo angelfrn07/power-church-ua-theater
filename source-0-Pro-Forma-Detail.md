@@ -1,11 +1,11 @@
 # Power Church plus UA Theater: Three-Scenario Pro Forma
 
-**Prepared for:** Angel Mendoza, Power Church building committee
+**Prepared for:** Power Church Building Committee
 **Date:** 2026-05-04
 **Property:** 8275 W Amarillo Blvd, Amarillo TX. Former United Artists movie theater.
 **Building:** 83,422 sq ft. Vacant 2.5 years.
 **Listing:** $5.5M ($66/sq ft) by Deeter Prater, Llano Realty.
-**Banker on file:** Jerome Pratt, SVP, First State Bank Spearman.
+**Banker on file:** Amarillo National Bank (ANB) — commercial lending department.
 
 ---
 
@@ -29,7 +29,7 @@ The single most decisive next step is **a 15-minute call to Deeter Prater**. Two
 | Renovation cost | $2,000,000 | Placeholder. $24/sqft for 83K sqft is on the low side for theater-to-sanctuary conversion. Real number could land $2.5M to $3.5M once you have a GC bid. |
 | Church gross | $100K/mo | Verbal. No P&L on file in vault. |
 | Church net | $25K/mo | $300K/yr deployable. |
-| Bank rate (term) | 7.5%, 25-yr amort | First State Bank Spearman small-commercial benchmark |
+| Bank rate (term) | 7.5%, 25-yr amort | Amarillo National Bank (ANB) small-commercial benchmark |
 | Bank rate (construction IO) | 8.0% interest-only | Standard CRE construction |
 | Seller carry rate | 6.0% IO, 24-mo balloon | Typical commercial carryback |
 | Master lease rate | $3/sqft annual gross | $20,856/mo all-in. Range tested $2 to $4/sqft. |
@@ -76,7 +76,7 @@ The single most decisive next step is **a 15-minute call to Deeter Prater**. Two
 - All-in: roughly **$33,000/mo** ongoing
 - vs $25K net at base case: **deficit $8,000/mo ongoing**
 
-**The honest flag on Scenario A:** the construction-phase math works, but permanent debt service requires either church net to grow about 30% post-occupancy (typical for relocations into bigger buildings, but not guaranteed), OR the SE 10th Ave campus to be sold and proceeds applied at refi to lower the permanent balance, OR a 30-year amort negotiated with Jerome Pratt (rare, possible).
+**The honest flag on Scenario A:** the construction-phase math works, but permanent debt service requires either church net to grow about 30% post-occupancy (typical for relocations into bigger buildings, but not guaranteed), OR the SE 10th Ave campus to be sold and proceeds applied at refi to lower the permanent balance, OR a 30-year amort negotiated with Amarillo National Bank (ANB) commercial lending (rare, possible).
 
 **Risk ranking: MEDIUM.** Hinges on (a) seller agreeing to carry, (b) appraisal clearing $5.5M, (c) post-occupancy giving lift OR SE 10th Ave sale.
 
@@ -223,12 +223,12 @@ Scenario C is very rent-sensitive. Negotiating $2/sqft instead of $3/sqft saves 
 
 ## What you need to confirm before this goes to committee
 
-1. **Borrower entity.** Power Church 501(c)(3) directly, or an Angel-controlled LLC that the church leases from? Materially affects bank product, tax treatment (church-owned is tax exempt; LLC-owned is fully taxable, easily $80K to $120K/yr), and donor-pledge mechanics.
-2. **The "$1M approved" figure** you mentioned. Is that the same as Jerome Pratt's existing pre-approval, or a separate church-level approval at a different bank? I want to know the actual ceiling and which institution.
+1. **Borrower entity.** Power Church 501(c)(3) directly, or a separate church-controlled LLC that the church leases from? Materially affects bank product, tax treatment (church-owned is tax exempt; LLC-owned is fully taxable, easily $80K to $120K/yr), and donor-pledge mechanics. Recommendation is direct 501(c)(3) ownership for full property-tax exemption.
+2. **The "$1M approved" figure** you mentioned. Is that the same as Amarillo National Bank (ANB) commercial lending's existing pre-approval, or a separate church-level approval at a different bank? I want to know the actual ceiling and which institution.
 3. **Power Church 2024 and 2025 P&L statements.** Commercial banks need 2 to 3 years for underwriting. Right now $100K/$25K is verbal and won't fly with an underwriter.
 4. **SE 10th Ave existing building.** Owned outright, leased, or mortgaged? Annual carrying cost? Drives the dual-building burden line in every scenario. Possible third option: SE 10th Ave is sold concurrent with refi, and proceeds apply directly to the permanent loan balance. This dramatically improves Scenario A and C math.
 5. **Has anyone on the committee already pre-asked Deeter Prater** about carryback or master-lease willingness? If yes, what was the response?
-6. **Theater-to-sanctuary GC bid.** $2M is a placeholder. Need a real bid. Crown House Texas Partners (your GC entity) is the obvious candidate but creates a related-party conflict that has to be disclosed to the committee in writing and ideally bid against one independent contractor.
+6. **Theater-to-sanctuary GC bid.** $2M is a placeholder estimate. Need a real bid. The Building Committee will solicit at least two qualified contractor bids. Any related-party bidder (committee member's affiliated company) will be disclosed in writing and bid against an independent comparable.
 
 ---
 
@@ -237,10 +237,10 @@ Scenario C is very rent-sensitive. Negotiating $2/sqft instead of $3/sqft saves 
 1. **This week:** Call Deeter Prater. 15 minutes, two questions:
    - "Would seller entertain a $4M effective price with $2M seller carryback IO and 24-month balloon?" (unlocks Scenario A)
    - "Would seller entertain a master lease at $3/sqft gross with 12 months rent abatement during construction and option to buy at $3.8M?" (unlocks Scenario C)
-2. **Within 2 weeks:** Get a real GC bid on theater-to-sanctuary conversion. Crown House Texas Partners plus one independent. Pick a number.
+2. **Within 2 weeks:** Get real GC bids on theater-to-sanctuary conversion. Two qualified contractors minimum. Pick the lowest qualified number.
 3. **Within 30 days:** Pull Power Church 2024 and 2025 P&L into clean format for bank submission.
 4. **Concurrent:** Draft a pre-close major-donor ask. A single $500K to $1M lead gift transforms every scenario from MEDIUM-HIGH risk to LOW-MEDIUM risk.
-5. **After Deeter's answer:** This pro forma collapses to one scenario. Bank submission package goes to Jerome Pratt with a clean capital stack and a real GC bid.
+5. **After Deeter's answer:** This pro forma collapses to one scenario. Bank submission package goes to Amarillo National Bank (ANB) commercial lending with a clean capital stack and a real GC bid.
 
 ---
 

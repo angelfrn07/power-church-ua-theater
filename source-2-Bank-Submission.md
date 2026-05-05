@@ -1,8 +1,8 @@
 # COMMERCIAL LOAN PROPOSAL
 ## $2,000,000 Construction Loan: UA Theater Acquisition and Sanctuary Conversion
 
-**Submitted to:** Jerome Pratt, Senior Vice President, First State Bank Spearman
-**Submitted by:** Power Church (Pastor Manny De Los Santos) and Angel Mendoza, Building Committee
+**Submitted to:** Amarillo National Bank (ANB), Commercial Lending Department
+**Submitted by:** Power Church (Pastor Manny De Los Santos) on behalf of the Power Church Building Committee
 **Property:** 8275 W Amarillo Blvd, Amarillo, TX 79124
 **Date:** 2026-05-04
 
@@ -18,8 +18,8 @@
 | Permanent financing | Refi to permanent mortgage at certificate of occupancy |
 | Use of proceeds | Theater-to-sanctuary renovation of acquired UA Theater facility |
 | Capital partner | Seller carryback OR master lease (both modeled below) |
-| Sponsor | Angel Mendoza (Crown House Texas Partners principal, existing First State Bank Spearman relationship) |
 | Borrower | Power Church (501(c)(3) entity confirmation pending) |
+| Banking relationship | Amarillo National Bank (ANB) — established church account |
 
 **Why this loan performs:** The borrower is an established religious organization with $1.2M of documented annual core revenue. Existing cash flow services Layer 2 (Conservative tier) commercial debt before any new revenue stream is added. Each additional revenue layer above is incremental cushion, not a requirement for performance. The collateral is a fully built, move-in-ready 83,422 square foot commercial facility purchased below replacement cost.
 
@@ -55,12 +55,7 @@
 **Tax status:** 501(c)(3) religious organization (EIN to be provided)
 **Property tax exemption:** Will apply post-occupancy under Texas Tax Code Sec. 11.20 (religious-use property), reducing carrying costs by an estimated $80,000 to $120,000 annually
 
-**Sponsor:** Angel Mendoza
-- Principal of Crown House Texas Partners (acquisitions and general contracting)
-- Owner-operator of My Royal Estates (manages 46 rental units in Amarillo and Canyon)
-- Existing First State Bank Spearman customer (Phase 1 personal LOC under separate parallel discussion)
-- Personal Financial Statement available on request
-- Building Committee member, providing operational and financial leadership for this project
+**Building Committee:** The Power Church Building Committee, comprised of church members with operational, real estate, and financial backgrounds, is overseeing the acquisition and renovation. The committee operates under Pastor Manny De Los Santos's authority and reports back to the church for material decisions. Personal financial statements of authorized signatories are available on request if required for underwriting.
 
 ---
 
@@ -189,8 +184,8 @@ This already covers debt service from Layer 1 alone, before any commercial reven
 - Capital campaign target of $500K-$1M provides additional construction-phase reserve
 
 **Mitigants for slow-ramp risk:**
-- Sponsor (Angel Mendoza) has GC capability through Crown House Texas Partners and operational track record managing 46 rental units
-- Pastor Manny has established congregation with 4-year operating history at current campus
+- Pastor Manny De Los Santos has established congregation with multi-year operating history at current campus
+- Building Committee includes members with construction, real estate, and financial expertise
 - SE 10th Ave campus continues to operate during construction; sale potential at refi can apply directly to permanent loan principal
 
 ---
@@ -208,7 +203,7 @@ This already covers debt service from Layer 1 alone, before any commercial reven
 **LTV at refi (Scenario A):** $4.12M permanent / $5.49M target ARV = 75.0%
 **LTV at refi (Scenario C):** $5.98M permanent / $7.97M target ARV = 75.0%
 
-**Secondary:** Personal guarantee from Angel Mendoza if required (subject to bank policy and PFS review).
+**Secondary:** Personal guarantees from authorized building committee signatories may be available subject to bank policy and PFS review.
 
 ---
 
@@ -229,8 +224,8 @@ This already covers debt service from Layer 1 alone, before any commercial reven
 
 **Bank exit comfort:**
 - Asset is a community anchor with diversified income, not a single-tenant special-purpose property
-- 501(c)(3) sponsor with stable congregation base
-- Sponsor has secondary acquisition expertise (Crown House Texas Partners)
+- 501(c)(3) borrower with stable congregation base
+- Building Committee provides operational continuity and acquisition oversight
 
 ---
 
@@ -245,7 +240,7 @@ This already covers debt service from Layer 1 alone, before any commercial reven
 | 5: Punch list, certificate of occupancy, final inspections | 11-12 | $200,000 |
 | **Total construction draws** | | **$2,000,000** |
 
-GC selection: Crown House Texas Partners (related to sponsor, disclosed to committee) plus one independent bid for comparison. Lower-risk option selected by committee.
+GC selection: Power Church Building Committee will solicit competitive bids from at least two qualified general contractors. Any related-party bidder will be disclosed in writing and bid against an independent comparable. The lowest qualified bid that meets project specifications will be selected by committee vote.
 
 ---
 
@@ -254,18 +249,18 @@ GC selection: Crown House Texas Partners (related to sponsor, disclosed to commi
 A $2,000,000 construction loan, interest-only during the 12-month build period, with refinance to a 25-year permanent commercial mortgage at certificate of occupancy.
 
 **Indicative terms we'd request:**
-- Construction rate: 8.0% interest-only (or current First State Bank Spearman commercial construction rate)
-- Permanent rate: 7.5% fixed, 25-year amortization (or current First State Bank Spearman commercial term rate)
+- Construction rate: 8.0% interest-only (or current Amarillo National Bank (ANB) commercial construction rate)
+- Permanent rate: 7.5% fixed, 25-year amortization (or current Amarillo National Bank (ANB) commercial term rate)
 - Construction-to-permanent rollover at no additional origination fee
-- Personal guarantee from sponsor reviewable based on PFS
+- Personal guarantees from authorized signatories reviewable based on PFS, subject to committee authorization
 - Standard commercial covenants including DSCR maintenance at 1.20x minimum
 - Reserve account funded at refi (3 months debt service)
 
 We are prepared to provide:
 - Power Church 2024 and 2025 financial statements
 - 501(c)(3) determination letter and EIN documentation
-- Sponsor PFS and Schedule of Real Estate Owned (currently in preparation for parallel Phase 1 personal LOC)
-- GC bid (Crown House Texas Partners + one independent)
+- Authorized signatory PFS and Schedule of Real Estate Owned (if requested by underwriter)
+- GC bids (minimum two qualified contractor bids; any related-party disclosed in writing)
 - Appraisal (we'll engage your designated commercial appraiser)
 - Environmental Phase I (we'll engage)
 - Title commitment and survey
@@ -276,15 +271,15 @@ We are prepared to provide:
 
 We'd welcome a 30-minute conversation to walk through this package and discuss term sheet parameters. The building committee has authorized us to negotiate within the framework outlined here, with final terms returning to the committee for ratification before signing.
 
-**Primary contact:**
-Angel Mendoza
-Building Committee, Power Church
-[Phone] | [Email]
-
 **Borrower contact:**
 Pastor Manny De Los Santos
 Senior Pastor, Power Church
 [Phone] | [Email]
+
+**Building Committee contact:**
+Power Church Building Committee
+1344 SE 10th Avenue, Amarillo, TX 79102
+[Committee Phone] | [Committee Email]
 
 ---
 

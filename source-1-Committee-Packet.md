@@ -232,7 +232,7 @@ The seller's answer narrows the two scenarios to one and saves a week of debate.
 
 ## APPENDIX B: COMPANION DOCUMENTS
 
-- **Bank Submission Package:** `power-church-bank-submission-2026-05-04.md` (formal commercial loan proposal for Jerome Pratt)
+- **Bank Submission Package:** `power-church-bank-submission-2026-05-04.md` (formal commercial loan proposal to Amarillo National Bank)
 - **Seller Pitch:** `power-church-seller-pitch-2026-05-04.md` (warm letter to Deeter Prater + 1-page deal terms)
 - **Pro Forma Detail:** `power-church-ua-theater-proforma-2026-05-04.md` (full sensitivity tables, full math)
 
