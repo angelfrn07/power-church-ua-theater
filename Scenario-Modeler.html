@@ -422,8 +422,22 @@
     </main>
   </div>
 
-  <div class="text-xs text-stone-500 italic mt-6 text-center">
-    Power Church · UA Theater Pro Forma · Built {{date}} · All numbers update live with the sliders.
+  <div class="mt-8 pt-6 border-t border-[color:var(--line)] text-xs text-stone-500 space-y-2">
+    <div class="text-center">
+      <strong>Power Church · UA Theater Pro Forma</strong> · Updated <span id="lastUpdated"></span> · All numbers update live with the sliders.
+    </div>
+    <div class="text-center">
+      <strong>Sources & methodology</strong> ·
+      <a href="source-4-ARV-Research.md" target="_blank" class="underline hover:text-[color:var(--moss)]">ARV research (301 lines, cited)</a> ·
+      <a href="source-5-Bank-Packet-Research.md" target="_blank" class="underline hover:text-[color:var(--moss)]">Bank packet research (552 lines)</a> ·
+      <a href="source-6-Master-Lease-Research.md" target="_blank" class="underline hover:text-[color:var(--moss)]">Master lease research</a> ·
+      <a href="5-Loan-Packet.pdf" target="_blank" class="underline hover:text-[color:var(--moss)]">Loan packet PDF</a> ·
+      <a href="1-Committee-Packet.pdf" target="_blank" class="underline hover:text-[color:var(--moss)]">Committee packet PDF</a> ·
+      <a href="3-Seller-Pitch.pdf" target="_blank" class="underline hover:text-[color:var(--moss)]">Seller pitch PDF</a>
+    </div>
+    <div class="text-center text-[10px] text-stone-400">
+      Verified data from: 2024 Census ACS · TxDOT public records · Amarillo Code of Ordinances §4-10 · LoopNet/Crexi/Realmo comp listings · 2015 PRAD-recorded sale (Power Church UA Theater)
+    </div>
   </div>
 </div>
 
@@ -646,6 +660,7 @@ function render() {
   setText('locAvail', fmt$M(r.loc.available));
   setText('locMonthly', fmt$(r.loc.monthlyIfFull) + '/mo');
   setText('now', new Date().toLocaleString('en-US', {month:'short', day:'numeric', hour:'numeric', minute:'2-digit'}));
+  setText('lastUpdated', new Date().toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'}));
 
   // KPI banner
   setText('kpiPurchase', fmt$M(state.purchase));
@@ -786,23 +801,33 @@ function renderProjection(r) {
   }
 
   setText('projInNet', fmt$(inNet));
-  setText('projInSupp', fmt$(inSupp));
-  setText('projInTotal', fmt$(inTotal));
+  setText('projInSupp', fmt$(inSupp) + ' (full ramp · see month-by-month for actual)');
+  setText('projInTotal', fmt$(inTotal) + ' (at full ramp)');
 
-  // Month-by-month rows
+  // Supplementary income RAMP curve — supp doesn't come online day 1.
+  // M1-2: 0% (nothing operational yet) · M3: 10% (first bookings) · M4-9: linear ramp · M10-12: 100% (full)
+  const RAMP = [0, 0, 0.10, 0.25, 0.40, 0.55, 0.70, 0.80, 0.90, 1.00, 1.00, 1.00];
+
+  // Month-by-month rows with ramped income
   const tbody = document.getElementById('projBody');
+  let yrIn = 0, yrOut = 0;
   if (tbody) {
     let cumulative = 0;
     let html = '';
     for (let m = 1; m <= months; m++) {
-      const monthNet = inTotal - outTotal;
+      const rampedSupp = inSupp * RAMP[m-1];
+      const monthIn = inNet + rampedSupp;
+      const monthNet = monthIn - outTotal;
       cumulative += monthNet;
+      yrIn += monthIn;
+      yrOut += outTotal;
       const netColor = monthNet >= 0 ? 'var(--good)' : 'var(--bad)';
       const cumColor = cumulative >= 0 ? 'var(--good)' : 'var(--bad)';
       const rowBg = cumulative < 0 ? 'background: rgba(239, 68, 68, 0.04);' : '';
+      const rampPct = (RAMP[m-1] * 100).toFixed(0);
       html += `<tr class="border-b border-stone-100" style="${rowBg}">
-        <td class="p-2 font-medium">Month ${m}</td>
-        <td class="p-2 text-right mono">${fmt$(inTotal)}</td>
+        <td class="p-2 font-medium">Month ${m} <span class="text-[10px] text-stone-400">(supp ${rampPct}%)</span></td>
+        <td class="p-2 text-right mono">${fmt$(monthIn)}</td>
         <td class="p-2 text-right mono">${fmt$(outTotal)}</td>
         <td class="p-2 text-right mono font-semibold" style="color: ${netColor}">${fmt$(monthNet)}</td>
         <td class="p-2 text-right mono font-bold" style="color: ${cumColor}">${fmt$(cumulative)}</td>
@@ -811,8 +836,6 @@ function renderProjection(r) {
     tbody.innerHTML = html;
   }
 
-  const yrIn = inTotal * months;
-  const yrOut = outTotal * months;
   const yrNet = yrIn - yrOut;
   setText('projYrIn', fmt$(yrIn));
   setText('projYrOut', fmt$(yrOut));
@@ -821,23 +844,23 @@ function renderProjection(r) {
   setColor('projYrNet', yrNet);
   setColor('projYrCum', yrNet);
 
-  // Verdict
+  // Verdict (with income-ramp reality acknowledged)
   const verdict = document.getElementById('projVerdict');
   if (verdict) {
-    const monthlyDeficit = outTotal - inTotal;
-    const locReserve = r.loc.available - (view === 'A' ? r.a.locDrawn : r.b.locDrawn);
+    const locReserve = r.loc.available - (view === 'A' ? r.a.locDrawn : (view === 'B' ? r.b.locDrawn : 0));
+    const rampNote = `<div class="text-[11px] text-stone-500 italic mt-1">Income ramp: $0 supp in months 1-2 (nothing operational yet), 10% by month 3, linear ramp to 100% by month 10. Side income from gym/daycare/events/rentals takes time to spool up.</div>`;
     if (yrNet >= 0) {
       verdict.style.background = 'rgba(34, 197, 94, 0.08)';
       verdict.style.border = '1px solid rgba(34, 197, 94, 0.3)';
-      verdict.innerHTML = `<strong style="color: var(--good);">✓ Year 1 cash flow holds.</strong> Each month we run a <strong>${fmt$(inTotal - outTotal)} surplus</strong>, totaling <strong>${fmt$(yrNet)} cumulative</strong> by month 12. The LOC's remaining ${fmt$(locReserve)} stays as backup reserve.`;
+      verdict.innerHTML = `<strong style="color: var(--good);">✓ Year 1 cash flow holds, even with ramped income.</strong> 12-month total: <strong>${fmt$(yrIn)} in / ${fmt$(yrOut)} out = ${fmt$(yrNet)} surplus</strong>. The LOC's remaining ${fmt$(locReserve)} stays as backup reserve.` + rampNote;
     } else if (Math.abs(yrNet) <= locReserve) {
       verdict.style.background = 'rgba(245, 158, 11, 0.08)';
       verdict.style.border = '1px solid rgba(245, 158, 11, 0.3)';
-      verdict.innerHTML = `<strong style="color: var(--warn);">⚠ Year 1 is tight — but covered by LOC reserve.</strong> Monthly deficit of ${fmt$(monthlyDeficit)} totals <strong>${fmt$(Math.abs(yrNet))} cumulative</strong>. LOC remaining (${fmt$(locReserve)}) covers it with ${fmt$(locReserve - Math.abs(yrNet))} cushion.`;
+      verdict.innerHTML = `<strong style="color: var(--warn);">⚠ Year 1 is tight (esp. months 1-3 before side income kicks in).</strong> 12-month deficit: <strong>${fmt$(Math.abs(yrNet))}</strong>. LOC reserve (${fmt$(locReserve)}) covers it with ${fmt$(locReserve - Math.abs(yrNet))} cushion left.` + rampNote;
     } else {
       verdict.style.background = 'rgba(239, 68, 68, 0.08)';
       verdict.style.border = '1px solid rgba(239, 68, 68, 0.3)';
-      verdict.innerHTML = `<strong style="color: var(--bad);">✗ Year 1 cash flow doesn't pencil at this tier.</strong> Deficit of <strong>${fmt$(Math.abs(yrNet))}</strong> exceeds LOC reserve (${fmt$(locReserve)}). Needs higher income tier, pre-close fundraising, or a different deal structure.`;
+      verdict.innerHTML = `<strong style="color: var(--bad);">✗ Year 1 cash flow does NOT pencil with ramped income.</strong> 12-month deficit <strong>${fmt$(Math.abs(yrNet))}</strong> exceeds LOC reserve (${fmt$(locReserve)}). Needs faster income ramp, pre-close fundraising, or different deal structure.` + rampNote;
     }
   }
 
