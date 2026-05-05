@@ -54,7 +54,7 @@
       <img src="power-church-logo.png" alt="Power Church" style="height: 56px; width: auto; display: block;" />
       <div>
         <div class="text-xs uppercase tracking-[0.22em] text-[color:var(--moss)] font-bold">Power Church · Building Committee</div>
-        <div class="text-xs text-stone-500">Live as of <span id="now"></span></div>
+        <div class="text-xs text-stone-500"><span id="now"></span></div>
       </div>
     </div>
     <h1 class="pp text-5xl sm:text-6xl lg:text-7xl text-[color:var(--ink)]">
@@ -659,7 +659,7 @@ function render() {
   setText('lblSuppNet', '+' + fmt$(r.suppNet) + '/mo');
   setText('locAvail', fmt$M(r.loc.available));
   setText('locMonthly', fmt$(r.loc.monthlyIfFull) + '/mo');
-  setText('now', new Date().toLocaleString('en-US', {month:'short', day:'numeric', hour:'numeric', minute:'2-digit'}));
+  setText('now', new Date().toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'}));
   setText('lastUpdated', new Date().toLocaleDateString('en-US', {year:'numeric', month:'long', day:'numeric'}));
 
   // KPI banner
