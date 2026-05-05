@@ -83,7 +83,11 @@ The church owns the 1344 SE 10th Avenue property outright. Per broker valuation 
 
 ### Mission Alignment for Bank
 
-Power Church is a member of the broader Christian community in Amarillo. The Pastors Tribe Initiative is in active development for a launch at the Pastors Tribe Conference on 2026-07-15, an effort to serve pastors, ministry leaders, and the wider community more effectively. Long-term, the new facility will serve as both a worship venue and a multi-use community asset — daycare, youth events, weddings, conferences, and light commercial leasing of underutilized square footage.
+Power Church has been an active and consistent presence in the Amarillo community, faithfully shepherding members and serving the city through worship, discipleship, and outreach under Pastor Manny De Los Santos's leadership. *[TO INSERT — short list of Power Church's specific local ministries, partnerships, and community programs.]*
+
+The **Pastors Tribe Initiative** is Pastor Manny's heart for raising up local pastors and ministry leaders through coaching, resources, and leadership-development programming. The initiative is in active development for launch at the Pastors Tribe Conference on July 15, 2026, and is designed to strengthen the Amarillo-area pastoral community by equipping leaders to grow healthy churches and serve their congregations more effectively.
+
+Long-term, the new facility at 8275 W Amarillo Blvd will support both objectives — a primary worship venue for Power Church plus a multi-use community asset offering daycare, youth events, weddings, conferences, and light commercial leasing of underutilized square footage.
 
 ---
 
