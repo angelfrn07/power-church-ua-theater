@@ -243,7 +243,7 @@ For the subject property, our comp set is layered:
 
 **Theater-to-church $/SF range: $81 – $200/SF**, weighted toward **$100–$130/SF for as-is acquisitions** and **$180–$220/SF post-renovation**. Subject's $66/SF acquisition basis is below the entire comp set, supporting strong instant equity at close.
 
-### Collateral Coverage at $3.04M Loan Amount
+### Collateral Coverage — This Loan Only ($3.04M Acquisition Mortgage)
 
 | ARV Scenario | LTV vs $3.04M loan |
 |---|---|
@@ -251,7 +251,41 @@ For the subject property, our comp set is layered:
 | Mid ($9.1M) | **33.4%** |
 | High ($11.0M) | **27.6%** |
 
-**Even at the most conservative ARV scenario, the bank's loan-to-value is 40%** — well below the typical 75-80% commercial threshold. This deal is significantly over-collateralized for the bank.
+**Even at the most conservative ARV scenario, the bank's loan-to-value is 40%** — well below the typical 75-80% commercial threshold. This deal is significantly over-collateralized for the acquisition mortgage alone.
+
+### Collateral Coverage — Full Project View (~$5.8M Total Exposure if Construction Loan Added Later)
+
+For full transparency, here's what the picture looks like if Power Church later returns to the bank for a separate $2M construction loan to fund a comprehensive renovation. This second-stage financing is NOT part of this proposal but is shown so the underwriter can see the full deal envelope:
+
+| Capital component | Amount | Notes |
+|---|---|---|
+| Acquisition mortgage (THIS request) | $3,040,000 | Conventional, 80% LTV at acquisition |
+| Future construction loan (potential, separate request) | $2,000,000 | If Phase 2 capital campaign doesn't fully fund the renovation |
+| **Maximum combined bank exposure** | **$5,040,000** | If both are extended |
+| Power Church equity (LOC against SE 10th + cash) | $950,000+ | At closing (down + closing costs + reserve) |
+| **Total deal envelope** | **~$5.99M** | Aligns with the $6M total project cost the committee is targeting |
+
+**Coverage at the full project envelope of $5.04M combined bank exposure:**
+
+| ARV Scenario | LTV vs $5.04M combined exposure |
+|---|---|
+| Low ($7.5M) | 67.2% |
+| Mid ($9.1M) | **55.4%** |
+| High ($11.0M) | 45.8% |
+
+**At the realistic mid-case ARV of $9.1M, even the worst-case combined bank exposure stays at 55% LTV — still well under the 75-80% commercial threshold.** The bank has a strong margin of safety even if it eventually finances both the acquisition AND a future construction tranche.
+
+### The SE 10th Ave Property — Additional Church Asset (Not Pledged to This Loan)
+
+Power Church owns **1344 SE 10th Avenue** outright. Per Llano Realty's broker valuation (Deeter Prater), the existing property appraises in the **$1.8M – $2.0M range**.
+
+This property is NOT being sold to fund the UA Theater acquisition. Power Church plans to draw a Line of Credit (~$1.14M at 60% LTV) against the SE 10th Ave property to fund the down payment and closing costs on the subject acquisition. The SE 10th Ave building remains the church's asset, providing:
+
+1. **Standby liquidity** — the LOC can be drawn beyond the down-payment portion if needed for Year-1 transition cash flow
+2. **Future optionality** — sell at market timing of the church's choosing, lease to a third party, or convert to a ministry use (school, daycare, community center)
+3. **Balance-sheet strength** — Power Church's combined real estate footprint after closing will include both the SE 10th Ave property (~$1.9M) AND the UA Theater property (~$3.8M acquisition basis, $9.1M post-renovation ARV)
+
+**Total real estate held by Power Church post-closing: ~$11M of asset value backed by ~$3.04M of senior bank debt + ~$760K of LOC drawn = $3.8M total liabilities on $11M of real estate.** Loan-to-value across the full church portfolio: **35%.**
 
 ---
 
