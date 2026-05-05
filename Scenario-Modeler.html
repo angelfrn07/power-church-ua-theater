@@ -190,7 +190,10 @@
                 <label class="text-xs">Lease rate ($/sqft NNN annual)</label>
                 <span id="lblLease" class="mono text-xs font-bold text-sky-700"></span>
               </div>
-              <input type="range" id="lease" min="2.0" max="5.0" step="0.25" value="3.0">
+              <input type="range" id="lease" min="2.0" max="16.0" step="0.5" value="8.0">
+              <div class="flex justify-between text-[10px] text-stone-400 mt-0.5">
+                <span>$2 (low/distressed)</span><span>$8 (research mid)</span><span>$16 (Amarillo retail)</span>
+              </div>
             </div>
             <div class="mt-2">
               <div class="flex justify-between items-baseline mb-1">
@@ -479,7 +482,7 @@ const state = {
   arv: 9100000,
   existAppr: 1900000,
   locLtv: 0.60,
-  lease: 3.0,              // Scenario C: $/sqft NNN annual
+  lease: 8.0,              // Scenario C: $/sqft NNN annual (research-backed mid-case for Amarillo, 50% discount to $16 retail)
   buyout: 3800000,         // Scenario C: buyout price after construction
   projectionView: 'A'      // 'A' = committee plan, 'B' = Angel's counter, 'C' = master lease
 };
