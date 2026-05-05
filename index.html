@@ -1,0 +1,940 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Power Church · UA Theater · Pro Forma</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Anton&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  :root {
+    --ink: #0d0d0d;
+    --moss: #ff6123;
+    --moss-2: #ff7a47;
+    --cream: #fef6ed;
+    --mist: #fde9d4;
+    --line: #f0d4b1;
+    --good: #166534;
+    --warn: #854d0e;
+    --bad: #991b1b;
+  }
+  body {
+    background: var(--cream);
+    color: var(--ink);
+    font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  }
+  .pp { font-family: 'Anton', sans-serif; font-weight: 400; text-transform: uppercase; letter-spacing: 0.01em; line-height: 1.05; }
+  .mono { font-family: 'JetBrains Mono', monospace; }
+  .grid-card { background: white; border: 1px solid var(--line); }
+  .accent-line { height: 3px; background: linear-gradient(90deg, var(--moss) 0%, var(--moss-2) 50%, transparent 100%); }
+  input[type="range"] { accent-color: var(--moss); width: 100%; }
+  input[type="range"]::-webkit-slider-thumb { background: var(--moss); }
+  .tier-btn[data-active="true"] { background: var(--moss); color: white; }
+  .tier-btn { transition: all 0.2s; }
+  .preset-btn { transition: all 0.2s; cursor: pointer; }
+  .preset-btn:hover { transform: translateY(-1px); }
+  .preset-active { border-color: var(--moss) !important; background: var(--mist) !important; }
+  details summary { cursor: pointer; list-style: none; }
+  details summary::-webkit-details-marker { display: none; }
+  details[open] summary .chev { transform: rotate(90deg); }
+  .chev { transition: transform 0.2s; display: inline-block; }
+  @media print {
+    .no-print { display: none !important; }
+    body { background: white; }
+  }
+</style>
+</head>
+<body>
+
+<div class="max-w-7xl mx-auto px-4 sm:px-6 py-6 sm:py-10">
+
+  <!-- HEADER -->
+  <header class="mb-8">
+    <div class="flex items-center gap-3 mb-3">
+      <img src="power-church-logo.png" alt="Power Church" style="height: 56px; width: auto; display: block;" />
+      <div>
+        <div class="text-xs uppercase tracking-[0.22em] text-[color:var(--moss)] font-bold">Power Church · Building Committee</div>
+        <div class="text-xs text-stone-500">Live as of <span id="now"></span></div>
+      </div>
+    </div>
+    <h1 class="pp text-5xl sm:text-6xl lg:text-7xl text-[color:var(--ink)]">
+      UA Theater<br/>
+      <span class="text-[color:var(--moss)]">Pro Forma</span>
+    </h1>
+    <p class="mt-4 text-stone-700 text-base sm:text-lg max-w-3xl">
+      The committee's current plan, a strategic counter-offer, and a master-lease fallback — plus a 12-month roll-forward. Drag the sliders to stress-test. Numbers update live.
+    </p>
+    <div class="accent-line mt-5"></div>
+  </header>
+
+  <!-- VERDICT BANNER -->
+  <div class="rounded-2xl px-5 sm:px-7 py-5 mb-6 text-white" style="background: linear-gradient(135deg, var(--moss) 0%, var(--moss-2) 100%);">
+    <div class="grid grid-cols-1 sm:grid-cols-4 gap-4 text-center">
+      <div>
+        <div class="text-[10px] uppercase tracking-[0.2em] text-amber-100 mb-1">Purchase</div>
+        <div id="kpiPurchase" class="pp text-2xl">--</div>
+      </div>
+      <div>
+        <div class="text-[10px] uppercase tracking-[0.2em] text-amber-100 mb-1">Cash to closing</div>
+        <div id="kpiCash" class="pp text-2xl">--</div>
+      </div>
+      <div>
+        <div class="text-[10px] uppercase tracking-[0.2em] text-amber-100 mb-1">Year 1 monthly</div>
+        <div id="kpiMonthly" class="pp text-2xl">--</div>
+      </div>
+      <div>
+        <div class="text-[10px] uppercase tracking-[0.2em] text-amber-100 mb-1">% of giving to facility</div>
+        <div id="kpiFacPct" class="pp text-2xl">--</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-6">
+
+    <!-- LEFT: INPUTS -->
+    <aside class="lg:col-span-4 lg:sticky lg:top-4 self-start no-print">
+      <div class="grid-card rounded-2xl p-5 sm:p-6 shadow-sm">
+        <div class="flex items-center justify-between mb-4">
+          <h2 class="pp text-2xl">Inputs</h2>
+          <button id="resetBtn" class="text-xs uppercase tracking-wider text-stone-500 hover:text-[color:var(--moss)] transition">Reset</button>
+        </div>
+
+        <!-- Quick preset buttons -->
+        <div class="mb-5">
+          <label class="block text-xs uppercase tracking-wider text-stone-500 mb-2">Load a Scenario</label>
+          <div class="grid grid-cols-2 gap-2">
+            <button class="preset-btn p-2.5 rounded-xl border border-stone-200 text-left" data-preset="committee">
+              <div class="text-[10px] uppercase tracking-wider text-stone-500">Committee Plan (LOI)</div>
+              <div class="text-sm font-bold text-[color:var(--ink)]">$3.8M Conventional</div>
+              <div class="text-[10px] text-stone-400">As written in the LOI</div>
+            </button>
+            <button class="preset-btn p-2.5 rounded-xl border border-stone-200 text-left" data-preset="counter">
+              <div class="text-[10px] uppercase tracking-wider text-amber-700">Strategic Counter</div>
+              <div class="text-sm font-bold text-[color:var(--ink)]">$2M + $2M Construction</div>
+              <div class="text-[10px] text-stone-400">Negotiate Cinergy down</div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Income tier -->
+        <div class="mb-5">
+          <label class="block text-xs uppercase tracking-wider text-stone-500 mb-2">Income tier (supplementary)</label>
+          <div class="grid grid-cols-4 gap-1 bg-[color:var(--mist)] p-1 rounded-xl text-[11px] sm:text-xs font-semibold">
+            <button class="tier-btn rounded-lg py-2 text-stone-600" data-tier="layer1" title="Existing tithes only">Tithes</button>
+            <button class="tier-btn rounded-lg py-2 text-stone-600" data-tier="layer2" data-active="true" title="Light extras: rentals, weddings">Light</button>
+            <button class="tier-btn rounded-lg py-2 text-stone-600" data-tier="layer3" title="9 streams: gym + daycare + café">Strong</button>
+            <button class="tier-btn rounded-lg py-2 text-stone-600" data-tier="layer4" title="All streams optimized">All-out</button>
+          </div>
+          <div class="mt-2 text-[11px] text-stone-500 flex justify-between">
+            <span>Side income added</span>
+            <span id="lblSuppNet" class="mono font-semibold text-[color:var(--moss)]">--</span>
+          </div>
+        </div>
+
+        <div class="space-y-3">
+          <div>
+            <div class="flex justify-between items-baseline mb-1">
+              <label class="text-sm font-medium">Purchase price (to Cinergy)</label>
+              <span id="lblPurchase" class="mono text-sm font-semibold text-[color:var(--moss)]"></span>
+            </div>
+            <input type="range" id="purchase" min="2000000" max="5500000" step="100000" value="3800000">
+            <div class="flex justify-between text-[10px] text-stone-400">
+              <span>$2.0M (counter)</span><span>$3.8M (LOI)</span><span>$5.5M (asking)</span>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between items-baseline mb-1">
+              <label class="text-sm font-medium">Renovation needed</label>
+              <span id="lblReno" class="mono text-sm font-semibold text-[color:var(--moss)]"></span>
+            </div>
+            <input type="range" id="reno" min="100000" max="2500000" step="100000" value="2000000">
+            <div class="flex justify-between text-[10px] text-stone-400">
+              <span>$100K cash</span><span>$1M</span><span>$2.5M financed</span>
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between items-baseline mb-1">
+              <label class="text-sm font-medium">Bank construction loan</label>
+              <span id="lblConstrLoan" class="mono text-sm font-semibold text-[color:var(--moss)]"></span>
+            </div>
+            <input type="range" id="constrLoan" min="0" max="2500000" step="100000" value="0">
+            <div class="flex justify-between text-[10px] text-stone-400">
+              <span>$0 (committee)</span><span>$2M (counter)</span>
+            </div>
+            <div class="text-[10px] text-stone-500 italic mt-1">Set to $0 if reno is paid from cash flow. Set to $2M to add a separate construction loan.</div>
+          </div>
+
+          <div>
+            <div class="flex justify-between items-baseline mb-1">
+              <label class="text-sm font-medium">Down payment %</label>
+              <span id="lblDownPct" class="mono text-sm font-semibold text-[color:var(--moss)]"></span>
+            </div>
+            <input type="range" id="downPct" min="0.10" max="0.30" step="0.01" value="0.20">
+          </div>
+
+          <div>
+            <div class="flex justify-between items-baseline mb-1">
+              <label class="text-sm font-medium">Bank rate (acquisition mortgage)</label>
+              <span id="lblBankRate" class="mono text-sm font-semibold text-[color:var(--moss)]"></span>
+            </div>
+            <input type="range" id="bankRate" min="0.05" max="0.10" step="0.0025" value="0.07">
+          </div>
+
+          <!-- Scenario C inputs -->
+          <div class="pt-3 border-t border-[color:var(--line)] bg-sky-50 -mx-5 px-5 py-3 rounded-xl">
+            <div class="text-[11px] font-bold text-sky-700 mb-2">SCENARIO C — Master Lease Inputs</div>
+            <div>
+              <div class="flex justify-between items-baseline mb-1">
+                <label class="text-xs">Lease rate ($/sqft NNN annual)</label>
+                <span id="lblLease" class="mono text-xs font-bold text-sky-700"></span>
+              </div>
+              <input type="range" id="lease" min="2.0" max="5.0" step="0.25" value="3.0">
+            </div>
+            <div class="mt-2">
+              <div class="flex justify-between items-baseline mb-1">
+                <label class="text-xs">Buyout price (after construction)</label>
+                <span id="lblBuyout" class="mono text-xs font-bold text-sky-700"></span>
+              </div>
+              <input type="range" id="buyout" min="2000000" max="5500000" step="100000" value="3800000">
+            </div>
+          </div>
+
+          <div>
+            <div class="flex justify-between items-baseline mb-1">
+              <label class="text-sm font-medium">Church net surplus (existing)</label>
+              <span id="lblNet" class="mono text-sm font-semibold text-[color:var(--moss)]"></span>
+            </div>
+            <input type="range" id="net" min="15000" max="60000" step="1000" value="25000">
+            <div class="text-[10px] text-stone-500 italic mt-1">After all current expenses incl. SE 10th. Per Pastor Manny.</div>
+          </div>
+
+          <div class="pt-3 border-t border-[color:var(--line)] bg-[color:var(--mist)] -mx-5 px-5 py-3 rounded-xl">
+            <div class="text-[11px] font-bold text-[color:var(--moss)] mb-2">EXISTING BUILDING (SE 10th Ave) — LOC source</div>
+            <div>
+              <div class="flex justify-between items-baseline mb-1">
+                <label class="text-xs">Appraised value</label>
+                <span id="lblExistAppr" class="mono text-xs font-bold text-[color:var(--moss)]"></span>
+              </div>
+              <input type="range" id="existAppr" min="1500000" max="2500000" step="50000" value="1900000">
+            </div>
+            <div class="mt-2">
+              <div class="flex justify-between items-baseline mb-1">
+                <label class="text-xs">LOC % (60-75%)</label>
+                <span id="lblLocLtv" class="mono text-xs font-bold text-[color:var(--moss)]"></span>
+              </div>
+              <input type="range" id="locLtv" min="0.50" max="0.75" step="0.01" value="0.60">
+            </div>
+            <div class="mt-2 grid grid-cols-2 gap-2 text-center">
+              <div class="bg-white rounded-lg p-2 border border-[color:var(--line)]">
+                <div class="text-[9px] uppercase text-stone-500">LOC available</div>
+                <div id="locAvail" class="pp text-base text-[color:var(--moss)]">--</div>
+              </div>
+              <div class="bg-white rounded-lg p-2 border border-[color:var(--line)]">
+                <div class="text-[9px] uppercase text-stone-500">LOC IO if drawn</div>
+                <div id="locMonthly" class="pp text-base text-stone-700">--</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pt-3 border-t border-[color:var(--line)]">
+            <div class="flex justify-between items-baseline mb-1">
+              <label class="text-sm font-bold text-[color:var(--moss)]">Building ARV (post-construction)</label>
+              <span id="lblArv" class="mono text-sm font-bold text-[color:var(--moss)]"></span>
+            </div>
+            <input type="range" id="arv" min="5000000" max="12000000" step="100000" value="9100000">
+            <div class="flex justify-between text-[10px] text-stone-500 mt-0.5">
+              <span class="text-rose-600 font-semibold">$7.5M Low</span>
+              <span class="text-emerald-700 font-bold">$9.1M Mid</span>
+              <span class="text-emerald-600 font-semibold">$11M High</span>
+            </div>
+            <div class="text-[10px] text-stone-500 italic mt-1">Research-backed range — see source-4-ARV-Research.md</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- RIGHT: OUTPUTS -->
+    <main class="lg:col-span-8 space-y-6">
+
+      <!-- ===== SCENARIO CARDS ===== -->
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+        <!-- Card A: Committee's Current Plan -->
+        <div class="grid-card rounded-2xl p-5 shadow-sm border-l-4 border-[color:var(--moss)]" id="cardA">
+          <div class="flex items-start justify-between mb-2">
+            <div>
+              <div class="text-xs uppercase tracking-[0.18em] text-stone-500">Committee's Current Plan</div>
+              <h3 class="pp text-xl text-[color:var(--ink)]">Conventional Purchase</h3>
+            </div>
+            <div id="verdictA" class="text-[10px] uppercase tracking-wider px-2 py-1 rounded-full">--</div>
+          </div>
+          <div class="text-[11px] text-stone-500 mb-3">Per Power Church LOI · $3.8M from Cinergy · 20% down ($760K from LOC) · $3.04M ANB loan @ 7% / 25-yr · No construction loan · Reno from cash ($100-500K)</div>
+
+          <div class="space-y-2 text-sm">
+            <div class="flex justify-between"><span class="text-stone-500">Cash needed at closing</span><span id="aY0" class="mono font-semibold">--</span></div>
+            <div class="flex justify-between"><span class="text-stone-500">Bank P+I (25-yr amort)</span><span id="aBankPI" class="mono font-semibold">--</span></div>
+            <div class="flex justify-between"><span class="text-stone-500">UA operating costs</span><span id="aOps" class="mono font-semibold">--</span></div>
+            <div class="flex justify-between"><span class="text-stone-500">SE 10th carrying (transition)</span><span id="aSE" class="mono font-semibold">--</span></div>
+            <div class="flex justify-between"><span class="text-stone-500">LOC IO (until SE 10th sells)</span><span id="aLoc" class="mono font-semibold">--</span></div>
+            <div class="flex justify-between border-t border-stone-200 pt-2 font-semibold"><span>Year 1 total monthly</span><span id="aMonthlyY1" class="mono">--</span></div>
+            <div class="flex justify-between"><span class="text-stone-500">Steady-state monthly (after SE 10th sells)</span><span id="aMonthlySteady" class="mono font-semibold">--</span></div>
+            <div class="flex justify-between border-t border-stone-200 pt-2"><span class="font-medium">Year 1 surplus / (deficit)</span><span id="aDeficitY1" class="mono font-bold">--</span></div>
+            <div class="flex justify-between"><span class="font-medium">Steady-state surplus / (deficit)</span><span id="aDeficitSteady" class="mono font-bold">--</span></div>
+            <div class="flex justify-between mt-2 pt-2 border-t border-dashed border-stone-200"><span class="text-stone-500">% of gross giving to facility</span><span id="aFacPct" class="mono font-bold">--</span></div>
+            <div class="flex justify-between"><span class="text-stone-500">Bank's appraisal threshold</span><span id="aArvNeeded" class="mono font-semibold">--</span></div>
+          </div>
+          <div id="aStory" class="mt-4 pt-3 border-t border-[color:var(--line)] text-[12px] text-stone-700 leading-relaxed bg-[color:var(--mist)] -mx-5 -mb-5 px-5 py-3 rounded-b-2xl"></div>
+        </div>
+
+        <!-- Card B: Angel's Counter -->
+        <div class="grid-card rounded-2xl p-5 shadow-sm border-l-4 border-amber-500" id="cardB">
+          <div class="flex items-start justify-between mb-2">
+            <div>
+              <div class="text-xs uppercase tracking-[0.18em] text-amber-700">Strategic Counter (NOT yet on table)</div>
+              <h3 class="pp text-xl text-[color:var(--ink)]">$2M to Cinergy + $2M Construction</h3>
+            </div>
+            <div id="verdictB" class="text-[10px] uppercase tracking-wider px-2 py-1 rounded-full">--</div>
+          </div>
+          <div class="text-[11px] text-stone-500 mb-3">Counter Cinergy to $2M · 20% down ($800K from LOC) · Bank funds $2M construction loan · CTP IO during 12-mo build · converts to permanent at month 13 · delivers fully-renovated facility</div>
+
+          <div class="space-y-2 text-sm">
+            <div class="flex justify-between"><span class="text-stone-500">Cash needed at closing</span><span id="bY0" class="mono font-semibold">--</span></div>
+            <div class="flex justify-between"><span class="text-stone-500">Bank IO during build ($3.2M @ 8%)</span><span id="bBankIO" class="mono font-semibold">--</span></div>
+            <div class="flex justify-between"><span class="text-stone-500">UA carrying + SE 10th</span><span id="bCarry" class="mono font-semibold">--</span></div>
+            <div class="flex justify-between"><span class="text-stone-500">LOC IO</span><span id="bLoc" class="mono font-semibold">--</span></div>
+            <div class="flex justify-between border-t border-stone-200 pt-2 font-semibold"><span>Construction-phase monthly</span><span id="bMonthlyConstr" class="mono">--</span></div>
+            <div class="flex justify-between"><span class="text-stone-500">Permanent monthly (post-CTP)</span><span id="bMonthlyPerm" class="mono font-semibold">--</span></div>
+            <div class="flex justify-between border-t border-stone-200 pt-2"><span class="font-medium">Construction surplus / (deficit)</span><span id="bDeficitConstr" class="mono font-bold">--</span></div>
+            <div class="flex justify-between"><span class="font-medium">Permanent surplus / (deficit)</span><span id="bDeficitPerm" class="mono font-bold">--</span></div>
+            <div class="flex justify-between mt-2 pt-2 border-t border-dashed border-stone-200"><span class="text-stone-500">DSCR (income ÷ payment)</span><span id="bDscr" class="mono font-bold">--</span></div>
+            <div class="flex justify-between"><span class="text-stone-500">Bank's appraisal threshold</span><span id="bArvNeeded" class="mono font-semibold">--</span></div>
+            <div class="flex justify-between"><span class="text-stone-500">Cushion at $9.1M ARV</span><span id="bArvCushion" class="mono font-bold">--</span></div>
+          </div>
+          <div id="bStory" class="mt-4 pt-3 border-t border-[color:var(--line)] text-[12px] text-stone-700 leading-relaxed bg-amber-50 -mx-5 -mb-5 px-5 py-3 rounded-b-2xl"></div>
+        </div>
+
+        <!-- Card C: Master Lease Fallback -->
+        <div class="grid-card rounded-2xl p-5 shadow-sm border-l-4 border-sky-500 md:col-span-2" id="cardC">
+          <div class="flex items-start justify-between mb-2">
+            <div>
+              <div class="text-xs uppercase tracking-[0.18em] text-sky-700">Scenario C · Fallback (walkable safety net)</div>
+              <h3 class="pp text-xl text-[color:var(--ink)]">Master Lease + Buyout</h3>
+            </div>
+            <div id="verdictC" class="text-[10px] uppercase tracking-wider px-2 py-1 rounded-full">--</div>
+          </div>
+          <div class="text-[11px] text-stone-500 mb-3">Lease the building during 12-mo build at <span id="cLeaseRate" class="font-semibold">$3/sqft NNN</span> · Bank funds $2M construction · After construction, refi to $5.8M permanent (pays off construction loan + <span id="cBuyoutInline" class="font-semibold">$3.8M buyout</span>) · <strong>Walkable</strong> — if appraisal disappoints or income tier softens, walk from the lease, no debt aftermath</div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-3 text-sm">
+            <div class="bg-sky-50 rounded-lg p-3">
+              <div class="text-[10px] uppercase tracking-wider text-stone-500 mb-1">Construction phase (months 1-12)</div>
+              <div class="space-y-0.5">
+                <div class="flex justify-between"><span class="text-stone-500">Monthly lease ($3/sqft NNN)</span><span id="cLease" class="mono font-semibold">--</span></div>
+                <div class="flex justify-between"><span class="text-stone-500">Bank construction IO ($2M @ 8%)</span><span id="cConstrIO" class="mono font-semibold">--</span></div>
+                <div class="flex justify-between"><span class="text-stone-500">SE 10th carrying</span><span id="cSE" class="mono font-semibold">--</span></div>
+                <div class="flex justify-between border-t border-sky-200 pt-1 mt-1 font-bold"><span>Total monthly</span><span id="cMonthlyConstr" class="mono">--</span></div>
+                <div class="flex justify-between font-semibold"><span>vs income tier</span><span id="cDeficitConstr" class="mono">--</span></div>
+              </div>
+            </div>
+            <div class="bg-sky-50 rounded-lg p-3">
+              <div class="text-[10px] uppercase tracking-wider text-stone-500 mb-1">After buyout (refi at month 13)</div>
+              <div class="space-y-0.5">
+                <div class="flex justify-between"><span class="text-stone-500">Permanent loan ($2M reno + buyout)</span><span id="cPermLoan" class="mono font-semibold">--</span></div>
+                <div class="flex justify-between"><span class="text-stone-500">Permanent monthly P+I</span><span id="cMonthlyPerm" class="mono font-semibold">--</span></div>
+                <div class="flex justify-between"><span class="text-stone-500">DSCR (income ÷ payment)</span><span id="cDscr" class="mono font-semibold">--</span></div>
+                <div class="flex justify-between font-semibold"><span>vs income</span><span id="cDeficitPerm" class="mono">--</span></div>
+              </div>
+            </div>
+            <div class="bg-sky-50 rounded-lg p-3">
+              <div class="text-[10px] uppercase tracking-wider text-stone-500 mb-1">Refi gating (the safety net)</div>
+              <div class="space-y-0.5">
+                <div class="flex justify-between"><span class="text-stone-500">ARV needed</span><span id="cArvNeeded" class="mono font-semibold">--</span></div>
+                <div class="flex justify-between"><span class="text-stone-500">Cushion at $9.1M ARV</span><span id="cArvCushion" class="mono font-semibold">--</span></div>
+                <div class="flex justify-between font-semibold"><span>Refi clears?</span><span id="cArvClears" class="mono">--</span></div>
+                <div class="flex justify-between text-[10px] text-stone-500 italic mt-1"><span>If short → walk from lease</span><span>$0 deficiency</span></div>
+              </div>
+            </div>
+          </div>
+          <div id="cStory" class="mt-4 pt-3 border-t border-[color:var(--line)] text-[12px] text-stone-700 leading-relaxed bg-sky-50 -mx-5 -mb-5 px-5 py-3 rounded-b-2xl"></div>
+        </div>
+      </div>
+
+      <!-- ===== 12-MONTH PROJECTION ===== -->
+      <div class="grid-card rounded-2xl p-5 sm:p-6 shadow-sm">
+        <div class="flex items-baseline justify-between mb-3">
+          <h2 class="pp text-2xl">12-Month Cash Flow Roll-Forward</h2>
+          <div class="flex flex-wrap gap-2">
+            <button id="projViewA" class="text-xs uppercase tracking-wider px-3 py-1 rounded-full bg-[color:var(--moss)] text-white">Committee Plan</button>
+            <button id="projViewB" class="text-xs uppercase tracking-wider px-3 py-1 rounded-full bg-stone-200 text-stone-700">Strategic Counter</button>
+            <button id="projViewC" class="text-xs uppercase tracking-wider px-3 py-1 rounded-full bg-stone-200 text-stone-700">Master Lease</button>
+          </div>
+        </div>
+        <p class="text-sm text-stone-600 mb-4">What every month looks like during Year 1. The cumulative column is the headline — it shows whether we end the year ahead or behind.</p>
+
+        <!-- Income/expense breakdown -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-4 text-sm">
+          <div class="bg-[color:var(--mist)] rounded-lg p-3">
+            <div class="text-[10px] uppercase tracking-wider text-stone-500 mb-2">Money in (per month)</div>
+            <div class="space-y-0.5">
+              <div class="flex justify-between"><span>Existing church net</span><span id="projInNet" class="mono">--</span></div>
+              <div class="flex justify-between"><span>Supplementary income (this tier)</span><span id="projInSupp" class="mono">--</span></div>
+              <div class="flex justify-between border-t border-[color:var(--line)] pt-1 mt-1 font-bold text-[color:var(--moss)]"><span>Total in</span><span id="projInTotal" class="mono">--</span></div>
+            </div>
+          </div>
+          <div class="bg-rose-50 rounded-lg p-3">
+            <div class="text-[10px] uppercase tracking-wider text-stone-500 mb-2">Money out (per month)</div>
+            <div class="space-y-0.5" id="projOutBreakdown">
+              <!-- populated dynamically based on view -->
+            </div>
+          </div>
+        </div>
+
+        <!-- Month-by-month table -->
+        <div class="overflow-x-auto">
+          <table class="w-full text-xs sm:text-sm">
+            <thead>
+              <tr class="border-b-2 border-[color:var(--moss)]">
+                <th class="p-2 text-left text-stone-600">Month</th>
+                <th class="p-2 text-right text-stone-600">In</th>
+                <th class="p-2 text-right text-stone-600">Out</th>
+                <th class="p-2 text-right text-stone-600">Net</th>
+                <th class="p-2 text-right font-bold">Cumulative</th>
+              </tr>
+            </thead>
+            <tbody id="projBody"></tbody>
+            <tfoot>
+              <tr class="border-t-2 border-[color:var(--ink)] font-bold bg-[color:var(--cream)]">
+                <td class="p-2">12-mo total</td>
+                <td class="p-2 text-right mono" id="projYrIn">--</td>
+                <td class="p-2 text-right mono" id="projYrOut">--</td>
+                <td class="p-2 text-right mono" id="projYrNet">--</td>
+                <td class="p-2 text-right mono" id="projYrCum">--</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+
+        <!-- Verdict -->
+        <div id="projVerdict" class="mt-4 p-4 rounded-xl text-sm leading-relaxed"></div>
+      </div>
+
+    </main>
+  </div>
+
+  <div class="text-xs text-stone-500 italic mt-6 text-center">
+    Power Church · UA Theater Pro Forma · Built {{date}} · All numbers update live with the sliders.
+  </div>
+</div>
+
+<script>
+'use strict';
+
+// ============ CONSTANTS ============
+const SQFT = 83422;
+const SE10TH_MONTHLY = 5000;            // SE 10th carrying cost during transition
+const UA_OPS_MONTHLY = 22500;           // Insurance $3K + Utilities $14K + Maintenance $5.5K
+const UA_VACANT_MONTHLY = 5000;         // UA carrying during construction (utilities + insurance only, before move-in)
+const INSURANCE = 4000;                 // Steady-state insurance
+const CLOSING_PCT = 0.038;              // Closing costs as % of loan
+const LTV_TARGET = 0.75;                // Bank's max LTV at refi/funding
+const AMORT_YEARS = 25;
+const PERM_RATE = 0.075;                // Permanent loan rate (after CTP conversion)
+const CONSTR_RATE = 0.08;               // Bank construction loan IO rate
+const LOC_RATE = 0.085;                 // LOC IO rate
+const GROSS_GIVING = 100000;            // Power Church monthly gross
+const CINERGY_COUNTER = 2000000;        // Angel's counter price ($2M to Cinergy)
+
+// Income tiers (supplementary income above existing tithes)
+const TIERS = {
+  layer1: { name: 'Tithes only', supp: 0 },
+  layer2: { name: 'Light extras', supp: 19750 },     // Conservative side income
+  layer3: { name: 'Strong mix', supp: 82500 },       // Moderate (9 streams partial)
+  layer4: { name: 'All-out', supp: 137500 }          // Optimized
+};
+
+// ============ STATE ============
+const state = {
+  purchase: 3800000,
+  reno: 2000000,
+  constrLoan: 0,           // 0 = committee plan (no construction loan), 2M = Angel's counter
+  downPct: 0.20,
+  bankRate: 0.07,          // Acquisition rate
+  net: 25000,
+  tier: 'layer2',
+  arv: 9100000,
+  existAppr: 1900000,
+  locLtv: 0.60,
+  lease: 3.0,              // Scenario C: $/sqft NNN annual
+  buyout: 3800000,         // Scenario C: buyout price after construction
+  projectionView: 'A'      // 'A' = committee plan, 'B' = Angel's counter, 'C' = master lease
+};
+
+// ============ MATH HELPERS ============
+const fmt$ = n => (n < 0 ? '($' : '$') + Math.abs(Math.round(n)).toLocaleString() + (n < 0 ? ')' : '');
+const fmt$M = n => '$' + (n/1_000_000).toFixed(2) + 'M';
+const fmt$K = n => '$' + Math.round(n/1000).toLocaleString() + 'K';
+const fmtPct = n => (n * 100).toFixed(2) + '%';
+const fmtMult = n => n.toFixed(2) + 'x';
+
+// Monthly P+I for amortizing loan (rate annual, years)
+const mPMT = (principal, rate, years) => {
+  if (principal <= 0) return 0;
+  const r = rate / 12;
+  const n = years * 12;
+  if (r === 0) return principal / n;
+  return principal * (r * Math.pow(1+r, n)) / (Math.pow(1+r, n) - 1);
+};
+
+// Monthly IO
+const mIO = (principal, rate) => principal * rate / 12;
+
+// ============ COMPUTE ============
+function compute() {
+  const s = state;
+  const tier = TIERS[s.tier];
+  const suppNet = tier.supp;
+  const effectiveNet = s.net + suppNet;
+
+  // ===== SCENARIO A: COMMITTEE PLAN (conventional purchase) =====
+  const aDown = s.purchase * s.downPct;                     // PC down payment
+  const aBankLoan = s.purchase - aDown;                     // ANB loan (80% of price)
+  const aBankPI = mPMT(aBankLoan, s.bankRate, AMORT_YEARS); // Monthly P+I
+  const aLocDrawn = aDown;                                  // LOC funds the down payment
+  const aLocIO = mIO(aLocDrawn, LOC_RATE);                  // LOC interest until SE 10th sells
+  const aSE = SE10TH_MONTHLY;                               // SE 10th carrying during transition
+  const aOps = UA_OPS_MONTHLY;                              // UA operating costs (insurance + utilities + maintenance)
+  const aMonthlyY1 = aBankPI + aOps + aSE + aLocIO;         // Year 1 total (with SE 10th + LOC active)
+  const aMonthlySteady = aBankPI + aOps;                    // Steady-state (after SE 10th sells, LOC paid off)
+  const aDeficitY1 = effectiveNet - aMonthlyY1;             // Year 1 surplus/deficit
+  const aDeficitSteady = effectiveNet - aMonthlySteady;     // Steady-state surplus/deficit
+  const aFacPct = (aMonthlySteady / GROSS_GIVING) * 100;    // % of gross to facility (Board's metric)
+  const aArvNeeded = aBankLoan / LTV_TARGET;                // Bank requires this appraisal to lend
+  const aArvCushion = s.arv - aArvNeeded;
+  const aArvClears = s.arv >= aArvNeeded;
+  const aY0 = aDown + 70000 + 100000;                       // Down + closing $70K + initial reno $100K
+
+  // ===== SCENARIO B: ANGEL'S COUNTER (Cinergy $2M + Bank $2M construction) =====
+  const bCinergyTotal = CINERGY_COUNTER;                    // $2M to Cinergy
+  const bConstrLoan = 2000000;                              // Bank construction = $2M
+  const bTotalProject = bCinergyTotal + bConstrLoan;        // $4M project
+  const bDown = bTotalProject * s.downPct;                  // 20% × $4M = $800K
+  const bBankAcq = bCinergyTotal - bDown;                   // Bank acquisition piece = $1.2M
+  const bBankTotal = bBankAcq + bConstrLoan;                // Bank exposure = $3.2M
+  const bLocDrawn = bDown;
+  const bLocIO = mIO(bLocDrawn, LOC_RATE);
+  const bBankIO = mIO(bBankTotal, CONSTR_RATE);             // IO during 12-mo construction
+  const bUACarry = UA_VACANT_MONTHLY + SE10TH_MONTHLY;      // UA vacant + SE 10th during construction
+  const bMonthlyConstr = bBankIO + bUACarry + bLocIO;       // Construction-phase monthly burn
+  const bDeficitConstr = effectiveNet - bMonthlyConstr;
+  // After CTP conversion at month 13:
+  const bPermLoan = bBankTotal * (1 + CLOSING_PCT);         // Bank converts $3.2M to permanent + closing
+  const bPermPI = mPMT(bPermLoan, PERM_RATE, AMORT_YEARS);
+  const bMonthlyPerm = bPermPI + INSURANCE;                 // Permanent + steady-state insurance
+  const bDeficitPerm = effectiveNet - bMonthlyPerm;
+  const bDscr = effectiveNet / bMonthlyPerm;
+  const bArvNeeded = bPermLoan / LTV_TARGET;
+  const bArvCushion = s.arv - bArvNeeded;
+  const bArvClears = s.arv >= bArvNeeded;
+  const bY0 = bDown + 50000;                                // Down + closing
+
+  // ===== SCENARIO C: MASTER LEASE + BUYOUT (walkable fallback) =====
+  const cLease = (SQFT * s.lease) / 12;                     // Monthly lease (NNN)
+  const cConstrLoan = 2000000;                              // Bank construction loan during build
+  const cConstrIO = mIO(cConstrLoan, CONSTR_RATE);          // Bank construction IO
+  const cMonthlyConstr = cLease + cConstrIO + SE10TH_MONTHLY; // Lease + bank IO + SE 10th
+  const cDeficitConstr = effectiveNet - cMonthlyConstr;
+  const cPermLoan = (cConstrLoan + s.buyout) * (1 + CLOSING_PCT); // Refi covers construction + buyout
+  const cPermPI = mPMT(cPermLoan, PERM_RATE, AMORT_YEARS);
+  const cMonthlyPerm = cPermPI + INSURANCE;
+  const cDeficitPerm = effectiveNet - cMonthlyPerm;
+  const cDscr = effectiveNet / cMonthlyPerm;
+  const cArvNeeded = cPermLoan / LTV_TARGET;
+  const cArvCushion = s.arv - cArvNeeded;
+  const cArvClears = s.arv >= cArvNeeded;
+  const cY0 = 30000;                                        // First month rent + small earnest deposit
+
+  // ===== EXISTING BUILDING LOC =====
+  const locAvailable = s.existAppr * s.locLtv;
+  const locMonthlyIfFull = mIO(locAvailable, LOC_RATE);
+
+  return {
+    effectiveNet, suppNet,
+    a: {
+      down: aDown, bankLoan: aBankLoan, bankPI: aBankPI,
+      ops: aOps, se: aSE, locIO: aLocIO, locDrawn: aLocDrawn,
+      monthlyY1: aMonthlyY1, monthlySteady: aMonthlySteady,
+      deficitY1: aDeficitY1, deficitSteady: aDeficitSteady,
+      facPct: aFacPct, arvNeeded: aArvNeeded, arvCushion: aArvCushion, arvClears: aArvClears,
+      y0: aY0
+    },
+    b: {
+      cinergy: bCinergyTotal, constrLoan: bConstrLoan, totalProject: bTotalProject,
+      down: bDown, bankAcq: bBankAcq, bankTotal: bBankTotal,
+      locDrawn: bLocDrawn, locIO: bLocIO,
+      bankIO: bBankIO, uaCarry: bUACarry,
+      monthlyConstr: bMonthlyConstr, monthlyPerm: bMonthlyPerm,
+      deficitConstr: bDeficitConstr, deficitPerm: bDeficitPerm,
+      dscr: bDscr, arvNeeded: bArvNeeded, arvCushion: bArvCushion, arvClears: bArvClears,
+      permLoan: bPermLoan,
+      y0: bY0
+    },
+    c: {
+      lease: cLease, constrIO: cConstrIO, se: SE10TH_MONTHLY,
+      monthlyConstr: cMonthlyConstr, deficitConstr: cDeficitConstr,
+      permLoan: cPermLoan, monthlyPerm: cMonthlyPerm, deficitPerm: cDeficitPerm,
+      dscr: cDscr, arvNeeded: cArvNeeded, arvCushion: cArvCushion, arvClears: cArvClears,
+      y0: cY0
+    },
+    loc: { available: locAvailable, monthlyIfFull: locMonthlyIfFull }
+  };
+}
+
+// ============ VERDICT ============
+function verdictA(r) {
+  if (!r.a.arvClears) return { label: 'BANK SHORT', cls: 'bg-rose-100 text-rose-800' };
+  if (r.a.deficitSteady >= 0 && r.a.facPct < 35) return { label: 'STRONG', cls: 'bg-emerald-100 text-emerald-800' };
+  if (r.a.deficitSteady >= 0 && r.a.facPct < 45) return { label: 'VIABLE', cls: 'bg-emerald-50 text-emerald-700' };
+  if (r.a.facPct < 50) return { label: 'TIGHT', cls: 'bg-amber-100 text-amber-800' };
+  return { label: 'FACILITY-HEAVY', cls: 'bg-rose-100 text-rose-800' };
+}
+
+function verdictB(r) {
+  if (!r.b.arvClears) return { label: 'BANK SHORT', cls: 'bg-rose-100 text-rose-800' };
+  if (r.b.dscr >= 1.20) return { label: 'STRONG', cls: 'bg-emerald-100 text-emerald-800' };
+  if (r.b.dscr >= 1.0) return { label: 'VIABLE', cls: 'bg-emerald-50 text-emerald-700' };
+  if (r.b.dscr >= 0.85) return { label: 'TIGHT', cls: 'bg-amber-100 text-amber-800' };
+  return { label: 'AT RISK', cls: 'bg-rose-100 text-rose-800' };
+}
+
+function verdictC(r) {
+  if (!r.c.arvClears) return { label: 'WALK FROM LEASE', cls: 'bg-sky-100 text-sky-800' };
+  if (r.c.dscr >= 1.20) return { label: 'STRONG', cls: 'bg-emerald-100 text-emerald-800' };
+  if (r.c.dscr >= 1.0) return { label: 'VIABLE', cls: 'bg-emerald-50 text-emerald-700' };
+  if (r.c.dscr >= 0.85) return { label: 'TIGHT', cls: 'bg-amber-100 text-amber-800' };
+  return { label: 'AT RISK', cls: 'bg-rose-100 text-rose-800' };
+}
+
+// ============ RENDER ============
+function setText(id, val) {
+  const el = document.getElementById(id);
+  if (el) el.textContent = val;
+}
+
+function setColor(id, value) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.style.color = value >= 0 ? 'var(--good)' : 'var(--bad)';
+}
+
+function render() {
+  const r = compute();
+
+  // Input labels
+  setText('lblPurchase', fmt$M(state.purchase));
+  setText('lblReno', fmt$M(state.reno));
+  setText('lblConstrLoan', fmt$M(state.constrLoan));
+  setText('lblDownPct', (state.downPct * 100).toFixed(0) + '%');
+  setText('lblBankRate', fmtPct(state.bankRate));
+  setText('lblNet', fmt$K(state.net) + '/mo');
+  setText('lblArv', fmt$M(state.arv));
+  setText('lblExistAppr', fmt$M(state.existAppr));
+  setText('lblLocLtv', (state.locLtv * 100).toFixed(0) + '%');
+  setText('lblLease', '$' + state.lease.toFixed(2) + '/sqft');
+  setText('lblBuyout', fmt$M(state.buyout));
+  setText('lblSuppNet', '+' + fmt$(r.suppNet) + '/mo');
+  setText('locAvail', fmt$M(r.loc.available));
+  setText('locMonthly', fmt$(r.loc.monthlyIfFull) + '/mo');
+  setText('now', new Date().toLocaleString('en-US', {month:'short', day:'numeric', hour:'numeric', minute:'2-digit'}));
+
+  // KPI banner
+  setText('kpiPurchase', fmt$M(state.purchase));
+  setText('kpiCash', fmt$(r.a.y0));
+  setText('kpiMonthly', fmt$(r.a.monthlyY1) + '/mo');
+  setText('kpiFacPct', r.a.facPct.toFixed(0) + '%');
+
+  // Card A: Committee Plan
+  setText('aY0', fmt$(r.a.y0));
+  setText('aBankPI', fmt$(r.a.bankPI));
+  setText('aOps', fmt$(r.a.ops));
+  setText('aSE', fmt$(r.a.se));
+  setText('aLoc', fmt$(r.a.locIO));
+  setText('aMonthlyY1', fmt$(r.a.monthlyY1));
+  setText('aMonthlySteady', fmt$(r.a.monthlySteady));
+  setText('aDeficitY1', fmt$(r.a.deficitY1));
+  setText('aDeficitSteady', fmt$(r.a.deficitSteady));
+  setText('aFacPct', r.a.facPct.toFixed(0) + '%');
+  setText('aArvNeeded', fmt$M(r.a.arvNeeded));
+  setColor('aDeficitY1', r.a.deficitY1);
+  setColor('aDeficitSteady', r.a.deficitSteady);
+  const aFac = document.getElementById('aFacPct');
+  if (aFac) aFac.style.color = r.a.facPct >= 45 ? 'var(--bad)' : (r.a.facPct >= 40 ? 'var(--warn)' : 'var(--good)');
+  const va = verdictA(r);
+  const vaPill = document.getElementById('verdictA');
+  if (vaPill) { vaPill.textContent = va.label; vaPill.className = 'text-[10px] uppercase tracking-wider px-2 py-1 rounded-full ' + va.cls; }
+
+  // Card B: Angel's Counter
+  setText('bY0', fmt$(r.b.y0));
+  setText('bBankIO', fmt$(r.b.bankIO));
+  setText('bCarry', fmt$(r.b.uaCarry));
+  setText('bLoc', fmt$(r.b.locIO));
+  setText('bMonthlyConstr', fmt$(r.b.monthlyConstr));
+  setText('bMonthlyPerm', fmt$(r.b.monthlyPerm));
+  setText('bDeficitConstr', fmt$(r.b.deficitConstr));
+  setText('bDeficitPerm', fmt$(r.b.deficitPerm));
+  setText('bDscr', fmtMult(r.b.dscr));
+  setText('bArvNeeded', fmt$M(r.b.arvNeeded));
+  setText('bArvCushion', fmt$(r.b.arvCushion));
+  setColor('bDeficitConstr', r.b.deficitConstr);
+  setColor('bDeficitPerm', r.b.deficitPerm);
+  setColor('bArvCushion', r.b.arvCushion);
+  const vb = verdictB(r);
+  const vbPill = document.getElementById('verdictB');
+  if (vbPill) { vbPill.textContent = vb.label; vbPill.className = 'text-[10px] uppercase tracking-wider px-2 py-1 rounded-full ' + vb.cls; }
+
+  // Card A story
+  const aStory = document.getElementById('aStory');
+  if (aStory) {
+    aStory.innerHTML = `<strong class="text-[color:var(--moss)]">In plain English:</strong> Year 1 is <strong>${fmt$(Math.abs(r.a.deficitY1))}/mo ${r.a.deficitY1 >= 0 ? 'to the good' : 'short'}</strong> while we still hold SE 10th and pay LOC interest. Once SE 10th sells (paying off the LOC), steady-state is <strong>${fmt$(Math.abs(r.a.deficitSteady))}/mo ${r.a.deficitSteady >= 0 ? 'surplus' : 'short'}</strong>. Facility cost = ${r.a.facPct.toFixed(0)}% of gross giving (Board's "facility-heavy" zone starts at 40%). No refi event — same mortgage for 25 years.`;
+  }
+
+  // Card B story
+  const bStory = document.getElementById('bStory');
+  if (bStory) {
+    bStory.innerHTML = `<strong class="text-amber-700">Strategic Counter in plain English:</strong> During the 12-month build we run <strong>${fmt$(Math.abs(r.b.deficitConstr))}/mo ${r.b.deficitConstr >= 0 ? 'surplus' : 'deficit'}</strong> (IO-only, lower than Plan A). At month 13 the bank converts CTP to a $${(r.b.permLoan/1e6).toFixed(2)}M permanent at ${fmt$(r.b.monthlyPerm)}/mo — DSCR ${fmtMult(r.b.dscr)}. Bank needs ${fmt$M(r.b.arvNeeded)} appraisal (cushion ${fmt$(r.b.arvCushion)} at $9.1M ARV). <em>Requires Cinergy to accept $2M.</em>`;
+  }
+
+  // Card C: Master Lease + Buyout
+  setText('cLeaseRate', '$' + state.lease.toFixed(2) + '/sqft NNN');
+  setText('cBuyoutInline', fmt$M(state.buyout) + ' buyout');
+  setText('cLease', fmt$(r.c.lease));
+  setText('cConstrIO', fmt$(r.c.constrIO));
+  setText('cSE', fmt$(r.c.se));
+  setText('cMonthlyConstr', fmt$(r.c.monthlyConstr));
+  setText('cDeficitConstr', fmt$(r.c.deficitConstr));
+  setText('cPermLoan', fmt$M(r.c.permLoan));
+  setText('cMonthlyPerm', fmt$(r.c.monthlyPerm));
+  setText('cDeficitPerm', fmt$(r.c.deficitPerm));
+  setText('cDscr', fmtMult(r.c.dscr));
+  setText('cArvNeeded', fmt$M(r.c.arvNeeded));
+  setText('cArvCushion', fmt$(r.c.arvCushion));
+  setText('cArvClears', r.c.arvClears ? '✓ CLEARS' : '✗ WALK');
+  setColor('cDeficitConstr', r.c.deficitConstr);
+  setColor('cDeficitPerm', r.c.deficitPerm);
+  setColor('cArvCushion', r.c.arvCushion);
+  const cArvEl = document.getElementById('cArvClears');
+  if (cArvEl) cArvEl.style.color = r.c.arvClears ? 'var(--good)' : 'var(--bad)';
+  const vc = verdictC(r);
+  const vcPill = document.getElementById('verdictC');
+  if (vcPill) { vcPill.textContent = vc.label; vcPill.className = 'text-[10px] uppercase tracking-wider px-2 py-1 rounded-full ' + vc.cls; }
+
+  // Card C story
+  const cStory = document.getElementById('cStory');
+  if (cStory) {
+    const safetyNet = r.c.arvClears
+      ? `Refi clears at $9.1M ARV with ${fmt$(r.c.arvCushion)} cushion — exercise the option-to-buy and convert to a $${(r.c.permLoan/1e6).toFixed(2)}M permanent mortgage.`
+      : `If appraisal disappoints (current $9.1M short of needed ${fmt$M(r.c.arvNeeded)}), Power Church <strong>walks from the lease</strong> — no debt aftermath, no special-purpose asset stuck on the books.`;
+    cStory.innerHTML = `<strong class="text-sky-700">Master Lease in plain English:</strong> Lease the building during construction at ${fmt$(r.c.lease)}/mo (${'$'+state.lease.toFixed(2)}/sqft NNN). Bank funds $2M construction loan. Construction-phase total burn ${fmt$(r.c.monthlyConstr)}/mo (${r.c.deficitConstr >= 0 ? 'surplus ' + fmt$(r.c.deficitConstr) : 'deficit ' + fmt$(Math.abs(r.c.deficitConstr))}/mo vs current income tier). At month 13: ${safetyNet}`;
+  }
+
+  // 12-month projection
+  renderProjection(r);
+}
+
+function renderProjection(r) {
+  const view = state.projectionView;
+  const months = 12;
+  const inNet = state.net;
+  const inSupp = r.suppNet;
+  const inTotal = inNet + inSupp;
+
+  // View-specific expense breakdown
+  let breakdown = [];
+  let outTotal = 0;
+  if (view === 'A') {
+    breakdown = [
+      { label: `Bank P+I ($${(r.a.bankLoan/1e6).toFixed(2)}M @ 7% / 25-yr)`, val: r.a.bankPI },
+      { label: 'UA operating (insurance + utilities + maintenance)', val: r.a.ops },
+      { label: 'SE 10th carrying (transition)', val: r.a.se },
+      { label: `LOC IO ($${(r.a.locDrawn/1000).toFixed(0)}K drawn @ 8.5%)`, val: r.a.locIO }
+    ];
+    outTotal = r.a.monthlyY1;
+  } else if (view === 'B') {
+    breakdown = [
+      { label: `Bank IO ($${(r.b.bankTotal/1e6).toFixed(2)}M @ 8% during build)`, val: r.b.bankIO },
+      { label: 'UA carrying (vacant utilities) + SE 10th', val: r.b.uaCarry },
+      { label: `LOC IO ($${(r.b.locDrawn/1000).toFixed(0)}K drawn @ 8.5%)`, val: r.b.locIO }
+    ];
+    outTotal = r.b.monthlyConstr;
+  } else {
+    // Master Lease view
+    breakdown = [
+      { label: `Lease ($${state.lease.toFixed(2)}/sqft NNN annual)`, val: r.c.lease },
+      { label: 'Bank construction IO ($2M @ 8%)', val: r.c.constrIO },
+      { label: 'SE 10th carrying', val: r.c.se }
+    ];
+    outTotal = r.c.monthlyConstr;
+  }
+
+  // Render breakdown
+  const breakdownEl = document.getElementById('projOutBreakdown');
+  if (breakdownEl) {
+    breakdownEl.innerHTML = breakdown.map(b =>
+      `<div class="flex justify-between"><span>${b.label}</span><span class="mono">${fmt$(b.val)}</span></div>`
+    ).join('') +
+    `<div class="flex justify-between border-t border-rose-200 pt-1 mt-1 font-bold text-rose-700"><span>Total out</span><span class="mono">${fmt$(outTotal)}</span></div>`;
+  }
+
+  setText('projInNet', fmt$(inNet));
+  setText('projInSupp', fmt$(inSupp));
+  setText('projInTotal', fmt$(inTotal));
+
+  // Month-by-month rows
+  const tbody = document.getElementById('projBody');
+  if (tbody) {
+    let cumulative = 0;
+    let html = '';
+    for (let m = 1; m <= months; m++) {
+      const monthNet = inTotal - outTotal;
+      cumulative += monthNet;
+      const netColor = monthNet >= 0 ? 'var(--good)' : 'var(--bad)';
+      const cumColor = cumulative >= 0 ? 'var(--good)' : 'var(--bad)';
+      const rowBg = cumulative < 0 ? 'background: rgba(239, 68, 68, 0.04);' : '';
+      html += `<tr class="border-b border-stone-100" style="${rowBg}">
+        <td class="p-2 font-medium">Month ${m}</td>
+        <td class="p-2 text-right mono">${fmt$(inTotal)}</td>
+        <td class="p-2 text-right mono">${fmt$(outTotal)}</td>
+        <td class="p-2 text-right mono font-semibold" style="color: ${netColor}">${fmt$(monthNet)}</td>
+        <td class="p-2 text-right mono font-bold" style="color: ${cumColor}">${fmt$(cumulative)}</td>
+      </tr>`;
+    }
+    tbody.innerHTML = html;
+  }
+
+  const yrIn = inTotal * months;
+  const yrOut = outTotal * months;
+  const yrNet = yrIn - yrOut;
+  setText('projYrIn', fmt$(yrIn));
+  setText('projYrOut', fmt$(yrOut));
+  setText('projYrNet', fmt$(yrNet));
+  setText('projYrCum', fmt$(yrNet));
+  setColor('projYrNet', yrNet);
+  setColor('projYrCum', yrNet);
+
+  // Verdict
+  const verdict = document.getElementById('projVerdict');
+  if (verdict) {
+    const monthlyDeficit = outTotal - inTotal;
+    const locReserve = r.loc.available - (view === 'A' ? r.a.locDrawn : r.b.locDrawn);
+    if (yrNet >= 0) {
+      verdict.style.background = 'rgba(34, 197, 94, 0.08)';
+      verdict.style.border = '1px solid rgba(34, 197, 94, 0.3)';
+      verdict.innerHTML = `<strong style="color: var(--good);">✓ Year 1 cash flow holds.</strong> Each month we run a <strong>${fmt$(inTotal - outTotal)} surplus</strong>, totaling <strong>${fmt$(yrNet)} cumulative</strong> by month 12. The LOC's remaining ${fmt$(locReserve)} stays as backup reserve.`;
+    } else if (Math.abs(yrNet) <= locReserve) {
+      verdict.style.background = 'rgba(245, 158, 11, 0.08)';
+      verdict.style.border = '1px solid rgba(245, 158, 11, 0.3)';
+      verdict.innerHTML = `<strong style="color: var(--warn);">⚠ Year 1 is tight — but covered by LOC reserve.</strong> Monthly deficit of ${fmt$(monthlyDeficit)} totals <strong>${fmt$(Math.abs(yrNet))} cumulative</strong>. LOC remaining (${fmt$(locReserve)}) covers it with ${fmt$(locReserve - Math.abs(yrNet))} cushion.`;
+    } else {
+      verdict.style.background = 'rgba(239, 68, 68, 0.08)';
+      verdict.style.border = '1px solid rgba(239, 68, 68, 0.3)';
+      verdict.innerHTML = `<strong style="color: var(--bad);">✗ Year 1 cash flow doesn't pencil at this tier.</strong> Deficit of <strong>${fmt$(Math.abs(yrNet))}</strong> exceeds LOC reserve (${fmt$(locReserve)}). Needs higher income tier, pre-close fundraising, or a different deal structure.`;
+    }
+  }
+
+  // Toggle button styles
+  const aBtn = document.getElementById('projViewA');
+  const bBtn = document.getElementById('projViewB');
+  const cBtn = document.getElementById('projViewC');
+  if (aBtn && bBtn && cBtn) {
+    const inactive = 'text-xs uppercase tracking-wider px-3 py-1 rounded-full bg-stone-200 text-stone-700';
+    aBtn.className = view === 'A' ? 'text-xs uppercase tracking-wider px-3 py-1 rounded-full bg-[color:var(--moss)] text-white' : inactive;
+    bBtn.className = view === 'B' ? 'text-xs uppercase tracking-wider px-3 py-1 rounded-full bg-amber-500 text-white' : inactive;
+    cBtn.className = view === 'C' ? 'text-xs uppercase tracking-wider px-3 py-1 rounded-full bg-sky-500 text-white' : inactive;
+  }
+}
+
+// ============ BINDINGS ============
+function bindSlider(id, key, transform = v => +v) {
+  const el = document.getElementById(id);
+  if (!el) return;
+  el.addEventListener('input', () => { state[key] = transform(el.value); render(); });
+}
+
+bindSlider('purchase', 'purchase');
+bindSlider('reno', 'reno');
+bindSlider('constrLoan', 'constrLoan');
+bindSlider('downPct', 'downPct', v => +v);
+bindSlider('bankRate', 'bankRate', v => +v);
+bindSlider('net', 'net');
+bindSlider('arv', 'arv');
+bindSlider('existAppr', 'existAppr');
+bindSlider('locLtv', 'locLtv', v => +v);
+bindSlider('lease', 'lease', v => +v);
+bindSlider('buyout', 'buyout');
+
+document.querySelectorAll('.tier-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    document.querySelectorAll('.tier-btn').forEach(b => b.removeAttribute('data-active'));
+    btn.setAttribute('data-active', 'true');
+    state.tier = btn.getAttribute('data-tier');
+    render();
+  });
+});
+
+document.getElementById('projViewA').addEventListener('click', () => {
+  state.projectionView = 'A';
+  render();
+});
+document.getElementById('projViewB').addEventListener('click', () => {
+  state.projectionView = 'B';
+  render();
+});
+document.getElementById('projViewC').addEventListener('click', () => {
+  state.projectionView = 'C';
+  render();
+});
+
+// Presets
+const PRESETS = {
+  committee: {
+    purchase: 3800000, reno: 300000, constrLoan: 0,
+    downPct: 0.20, bankRate: 0.07, net: 25000, tier: 'layer2', arv: 9100000
+  },
+  counter: {
+    purchase: 2000000, reno: 2000000, constrLoan: 2000000,
+    downPct: 0.20, bankRate: 0.07, net: 25000, tier: 'layer2', arv: 9100000
+  }
+};
+
+function applyPreset(name) {
+  const p = PRESETS[name];
+  if (!p) return;
+  Object.assign(state, p);
+  // Sync sliders
+  document.getElementById('purchase').value = p.purchase;
+  document.getElementById('reno').value = p.reno;
+  document.getElementById('constrLoan').value = p.constrLoan;
+  document.getElementById('downPct').value = p.downPct;
+  document.getElementById('bankRate').value = p.bankRate;
+  document.getElementById('net').value = p.net;
+  document.getElementById('arv').value = p.arv;
+  document.querySelectorAll('.tier-btn').forEach(b => {
+    b.removeAttribute('data-active');
+    if (b.getAttribute('data-tier') === p.tier) b.setAttribute('data-active', 'true');
+  });
+  document.querySelectorAll('.preset-btn').forEach(b => b.classList.remove('preset-active'));
+  document.querySelector(`[data-preset="${name}"]`)?.classList.add('preset-active');
+  render();
+}
+
+document.querySelectorAll('.preset-btn').forEach(btn => {
+  btn.addEventListener('click', () => applyPreset(btn.getAttribute('data-preset')));
+});
+
+document.getElementById('resetBtn').addEventListener('click', () => applyPreset('committee'));
+
+// Initial render
+applyPreset('committee');
+</script>
+</body>
+</html>
