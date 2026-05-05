@@ -1,8 +1,7 @@
 # Power Church + UA Theater
 ## Building Committee Decision Packet
 
-**Date:** 2026-05-04
-**Prepared by:** Angel Mendoza, Building Committee
+**Date:** May 5, 2026
 **Audience:** Power Church Building Committee
 **Decision required:** Which acquisition structure to pursue + authorization for next steps
 
@@ -14,17 +13,19 @@ We have an opportunity to acquire the vacant United Artists movie theater at **8
 
 The original new-construction plan came back at $6.8M to $7M for a 32,000 sq ft sanctuary. The UA Theater gives us **two and a half times the building** at a comparable all-in cost, with a full kitchen, sloped sanctuary already framed, a parking lot already paved, and infrastructure already in place. Move-in ready in 9 to 12 months instead of 24+.
 
-**Bank capacity confirmed at $2M for a construction loan.** That eliminates a full $4M term-loan structure and leaves us with two viable financing paths, both built around a $2M bank construction loan:
+**Power Church already has bank approval for $3.8M (potentially $4M).** This is the foundation of the acquisition path on the table — a conventional commercial mortgage from our existing lender.
 
-1. **Scenario A: Seller Carry $2M + Bank Construction $2M.** Lowest year-zero cash, cleanest refi exit math. **Recommended primary path.**
-2. **Scenario C: Master Lease + $2M Bank Construction + Buyout at $3.8M.** Safer operationally (church can walk if it goes sideways); refi exit needs $1M to $1.5M of pledge capital. **Recommended fallback.**
-3. **Scenario B (eliminated): Full $4M Bank Term Loan + Fundraise $2M.** Bank capacity for the church is $2M, not $4M. This structure is no longer on the table. Documented below for completeness.
+We have three financing structures to consider:
 
-**Our recommendation: lead with Scenario A. Fall back to C if the seller declines carryback.**
+1. **Scenario A — Committee Plan (Conventional Purchase, ON THE TABLE):** $3.8M bank-approved acquisition mortgage, 20% down ($760K from a LOC against the SE 10th Ave building), $3.04M financed at ~7% / 25-yr amortizing. Renovation paid from cash flow over time.
+2. **Scenario A-Plus — Strategic Counter:** Push the seller to accept $2M cash and let us add a separate $2M bank construction loan for a full renovation. Delivers a fully renovated facility with lower long-term debt.
+3. **Scenario C — Master Lease + Buyout (Fallback):** Lease the building during construction, exercise option to buy at $3.8M post-construction. Walkable structure if anything goes sideways.
 
-**The single most decisive next step is a 15-minute call to Deeter Prater** asking whether the seller will carry or master-lease. The committee's vote today is twofold:
-1. **Greenlight the recommended sequence** (call Deeter, get GC bid, build the bank submission package)
-2. **Authorize Pastor Manny + Angel** to negotiate within the parameters of Scenarios A and C
+**Recommendation: lead with Scenario A (the bank-approved path). Use Scenario A-Plus or C as fallback if the seller is open to creative structures.**
+
+**The single most decisive next step is a 15-minute call to Deeter Prater** asking whether the seller will entertain seller-carry or master-lease structures. The committee's decisions today are:
+1. **Greenlight the bank-approved Scenario A path** (the $3.8M mortgage we've already been pre-approved for)
+2. **Authorize Pastor Manny to lead negotiations** with the seller and bank, supported by the Building Committee
 
 ---
 
@@ -78,9 +79,11 @@ The UA Theater is bigger, faster, cheaper per sq ft, and allows us to operate **
 
 **Risk: MEDIUM.** Hinges on (1) seller agrees to carry, (2) appraisal clears $5.5M, (3) supplementary income ramp begins.
 
-### Scenario B (ELIMINATED): $4M Bank Term Loan + Fundraise $2M
+### Bank Approval Status — What's Already in Place
 
-Bank capacity for Power Church is $2M for a construction loan, not $4M for a full term loan. This structure is no longer on the table. We document the math here briefly so the committee can see why it was considered and rejected:
+Power Church has bank approval for a **$3.8M acquisition loan** (potentially up to $4M). This is the foundation of the Scenario A committee plan. The bank's approval is for a conventional commercial mortgage at approximately 7% over a 25-year amortization with 20% down. The $760K down payment is sourced from a Line of Credit against the existing SE 10th Ave property (appraised at ~$1.9M, supporting up to $1.14M of LOC capacity).
+
+For reference, an earlier exploratory analysis considered a different "term loan plus fundraise" structure that's no longer relevant to the active deal. The math from that exploration is shown below for completeness but is not the path forward:
 
 - $4M PITI on a 25-year amort at 7.5% = $33,565/mo
 - Vacant-shell + SE 10th carrying = $10,000/mo
@@ -163,36 +166,38 @@ The seller's answer narrows the two scenarios to one and saves a week of debate.
 
 ## WHAT WE NEED FROM THE COMMITTEE TODAY
 
-1. **Vote on path forward:** Greenlight the Scenario A primary / Scenario C fallback approach.
-2. **Authorize negotiation parameters:** Pastor Manny and Angel are authorized to negotiate within the bounds of Scenarios A and C as outlined. Final terms return to the committee for ratification.
-3. **Authorize the GC bid solicitation:** Get a real theater-to-sanctuary conversion bid from Crown House Texas Partners and one independent contractor. Choose lower-risk option.
-4. **Approve preparation of bank submission package** to Jerome Pratt (First State Bank Spearman) once Deeter responds.
-5. **Approve the lead-donor outreach** to identify a $500K-$1M anchor gift commitment. Optional but de-risks every scenario.
+1. **Vote on path forward:** Greenlight the Scenario A primary path (the bank-approved $3.8M conventional purchase). Authorize Scenarios A-Plus or C as fallback structures if the seller is open to creative terms.
+2. **Authorize Pastor Manny to lead negotiations** with the seller and the bank, supported by the Building Committee. Final terms return to the committee for ratification.
+3. **Authorize GC bid solicitation:** Get at least two independent theater-to-sanctuary conversion bids before committing to a renovation contractor.
+4. **Approve preparation of the loan submission package** to the bank once seller terms are clarified.
+5. **Approve a lead-donor outreach** to identify a $500K-$1M anchor gift commitment. De-risks every scenario.
 
 ---
 
 ## OPEN QUESTIONS THE COMMITTEE NEEDS TO RESOLVE
 
-1. **Borrower entity.** Power Church 501(c)(3) directly, or an Angel-controlled LLC that the church leases from? Tax exemption is $80K-$120K/yr difference; bank product applies differently. **This is the biggest open question and should be settled today.**
+1. **Borrower entity.** Power Church 501(c)(3) directly, or a related taxable entity for the income-producing portions? Tax exemption is $80K-$120K/yr difference; bank product applies differently. **This is the biggest open question and should be settled today.**
 
-2. **The original "$1M approved" figure.** Is that Jerome Pratt's existing pre-approval, or a separate church-level approval at a different bank? The committee should clarify in writing what amount is currently approved and at what terms.
+2. **Bank approval clarification.** Confirm in writing the current bank approval amount and exact terms (rate, amortization, conditions). Existing approval is for $3.8M (potentially $4M).
 
-3. **Power Church P&L for 2024 and 2025.** The bank will need 2-3 years of statements to underwrite. Treasurer should pull these into clean format.
+3. **Power Church P&L for 2024 and 2025.** The bank will need 2-3 years of statements to finalize. Treasurer should pull these into clean format.
 
 4. **SE 10th Ave existing campus.** Owned outright, leased, or mortgaged? Annual carrying cost? Does the committee envision selling concurrent with closing, or running both buildings during the transition?
 
-5. **Crown House Texas Partners conflict disclosure.** Angel's GC entity is the natural candidate for the renovation. The committee should formalize related-party disclosure procedures and require an independent comparison bid.
+5. **Conflict disclosure procedures for any related-party renovation contractor.** The committee should formalize disclosure procedures and require an independent comparison bid for any renovation work where a building-committee member has a material business interest.
 
-6. **Capital campaign launch timing.** A formal congregation-wide campaign for $1M-$1.5M of construction-phase reserve and refi-cushion capital. Best to launch concurrently with the Deeter call so we're not asking Pratt for terms we can't back with congregation commitment.
+6. **Capital campaign launch timing.** A formal congregation-wide campaign for $1M-$1.5M of construction-phase reserve and refi-cushion capital. Best to launch concurrently with the seller call so we're not asking the bank for terms we can't back with congregation commitment.
+
+7. **Income-stream operational requirement.** The supplementary income plan (gym, daycare, café, conference rentals, weddings, banquet, recording studio, multi-tenant office, sports facility) requires a dedicated full-time manager for each major stream to be successful. Automation can promote and advertise, but each stream needs human leadership. The committee should plan for this staffing reality before relying on supplementary income to service debt.
 
 ---
 
 ## TIMELINE (proposed)
 
-- **Week 1 (this week):** Deeter Prater call. Borrower-entity decision. Committee ratifies path forward.
-- **Week 2:** GC bids out (Crown House + one independent). Capital campaign quiet phase opens.
-- **Week 3-4:** Deeter responds; scenario locks. Power Church P&L assembled. Sponsor PFS updated.
-- **Week 5-6:** Bank submission package to Jerome Pratt. Major-donor solicitation.
+- **Week 1 (this week):** Seller call (Deeter Prater). Borrower-entity decision. Committee ratifies path forward.
+- **Week 2:** GC bids out (two independent contractors). Capital campaign quiet phase opens.
+- **Week 3-4:** Seller responds; scenario locks. Power Church P&L assembled.
+- **Week 5-6:** Bank submission package finalized. Major-donor solicitation.
 - **Month 2:** Bank term sheet expected. Committee ratifies. LOI to seller.
 - **Month 3-4:** Due diligence, appraisal, environmental, title.
 - **Month 4-5:** Close.
@@ -233,4 +238,4 @@ The seller's answer narrows the two scenarios to one and saves a week of debate.
 
 ---
 
-**Prepared in service of the church and our shared vision. To God be the glory.**
+**To God be the glory. We can do this.**
