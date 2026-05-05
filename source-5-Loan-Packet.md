@@ -3,9 +3,33 @@ title: "Commercial Loan Proposal · Power Church · UA Theater Acquisition"
 date: "May 5, 2026"
 ---
 
-# Commercial Loan Proposal
+<div style="page-break-after: always; min-height: 9.2in; display: flex; flex-direction: column; padding: 1.2in 0 0 0; text-align: center; font-family: Garamond, 'EB Garamond', Georgia, 'Times New Roman', serif;">
 
-**Power Church · 8275 W Amarillo Blvd Acquisition**
+<div>
+  <img src="power-church-logo.png" alt="Power Church" style="height: 1.7in; width: auto; display: block; margin: 0 auto 26pt auto;" />
+  <div style="font-size: 11pt; letter-spacing: 0.20em; font-weight: 600; color: #000;">POWER CHURCH</div>
+  <div style="font-size: 9.5pt; color: #444; margin-top: 5pt; letter-spacing: 0.04em;">1344 SE 10th Avenue &nbsp;·&nbsp; Amarillo, Texas 79102</div>
+</div>
+
+<div style="margin: 1.0in auto 0 auto; max-width: 5.5in; border-top: 0.5pt solid #000; border-bottom: 0.5pt solid #000; padding: 22pt 0;">
+  <div style="font-size: 19pt; font-weight: 600; letter-spacing: 0.04em; color: #000;">Commercial Loan Proposal</div>
+  <div style="font-size: 11pt; font-style: italic; color: #333; margin-top: 10pt;">UA Theater Acquisition &nbsp;·&nbsp; 8275 W Amarillo Boulevard, Amarillo, Texas</div>
+</div>
+
+<div style="margin-top: 0.55in; font-size: 10.5pt; color: #000; line-height: 1.7;">
+  <div><strong>Submitted to:</strong> &nbsp; Amarillo National Bank &nbsp;·&nbsp; Commercial Lending Department</div>
+  <div><strong>Submitted by:</strong> &nbsp; Power Church (Texas 501(c)(3) Religious Nonprofit)</div>
+  <div><strong>Loan request:</strong> &nbsp; $3,040,000 &nbsp;·&nbsp; Conventional First Lien &nbsp;·&nbsp; 25-Year Amortization</div>
+  <div><strong>Date:</strong> &nbsp; May 5, 2026</div>
+</div>
+
+<div style="margin-top: auto; padding-top: 0.5in; padding-bottom: 0.3in; font-size: 8.5pt; color: #777; letter-spacing: 0.06em;">
+  CONFIDENTIAL &nbsp;—&nbsp; PREPARED FOR THE EXCLUSIVE USE OF AMARILLO NATIONAL BANK'S COMMERCIAL-LENDING REVIEW COMMITTEE
+</div>
+
+</div>
+
+## Loan Request Summary
 
 | Item | Detail |
 |---|---|

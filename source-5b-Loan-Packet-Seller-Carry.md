@@ -3,11 +3,39 @@ title: "Commercial Loan Proposal · Power Church · UA Theater Acquisition · Se
 date: "May 5, 2026"
 ---
 
-# Commercial Loan Proposal — Seller-Carry Alternative
+<div style="page-break-after: always; min-height: 9.2in; display: flex; flex-direction: column; padding: 1.2in 0 0 0; text-align: center; font-family: Garamond, 'EB Garamond', Georgia, 'Times New Roman', serif;">
 
-**Power Church · 8275 W Amarillo Blvd Acquisition + Renovation**
+<div>
+  <img src="power-church-logo.png" alt="Power Church" style="height: 1.7in; width: auto; display: block; margin: 0 auto 26pt auto;" />
+  <div style="font-size: 11pt; letter-spacing: 0.20em; font-weight: 600; color: #000;">POWER CHURCH</div>
+  <div style="font-size: 9.5pt; color: #444; margin-top: 5pt; letter-spacing: 0.04em;">1344 SE 10th Avenue &nbsp;·&nbsp; Amarillo, Texas 79102</div>
+</div>
 
-> **About this document.** This is the *alternative* capital-stack proposal to Amarillo National Bank (ANB) — a parallel companion to the conventional acquisition-mortgage proposal (`5-Loan-Packet`). The conventional proposal asks ANB to finance the acquisition. **This proposal asks ANB to finance ONLY the renovation construction** while the seller (Cinergy 110 LLC / Cinergy Entertainment Group) carries the acquisition note. Both versions are submitted so the bank's underwriter and the church's Building Committee can compare side-by-side and adopt whichever the seller actually agrees to. Final terms return to the Power Church Building Committee and to ANB for ratification.
+<div style="margin: 1.0in auto 0 auto; max-width: 5.5in; border-top: 0.5pt solid #000; border-bottom: 0.5pt solid #000; padding: 22pt 0;">
+  <div style="font-size: 19pt; font-weight: 600; letter-spacing: 0.04em; color: #000;">Commercial Loan Proposal</div>
+  <div style="font-size: 12pt; font-weight: 500; color: #000; margin-top: 6pt; letter-spacing: 0.02em;">Seller-Carry Alternative Structure</div>
+  <div style="font-size: 11pt; font-style: italic; color: #333; margin-top: 10pt;">UA Theater Acquisition &nbsp;·&nbsp; 8275 W Amarillo Boulevard, Amarillo, Texas</div>
+</div>
+
+<div style="margin-top: 0.55in; font-size: 10.5pt; color: #000; line-height: 1.7;">
+  <div><strong>Submitted to:</strong> &nbsp; Amarillo National Bank &nbsp;·&nbsp; Commercial Lending Department</div>
+  <div><strong>Submitted by:</strong> &nbsp; Power Church (Texas 501(c)(3) Religious Nonprofit)</div>
+  <div><strong>Bank request:</strong> &nbsp; ~$2,000,000 Construction Loan &nbsp;·&nbsp; Refi to ~$5,040,000 Permanent</div>
+  <div><strong>Companion document:</strong> &nbsp; Conventional Acquisition-Mortgage Proposal (separate packet)</div>
+  <div><strong>Date:</strong> &nbsp; May 5, 2026</div>
+</div>
+
+<div style="margin-top: auto; padding-top: 0.5in; padding-bottom: 0.3in; font-size: 8.5pt; color: #777; letter-spacing: 0.06em;">
+  CONFIDENTIAL &nbsp;—&nbsp; PREPARED FOR THE EXCLUSIVE USE OF AMARILLO NATIONAL BANK'S COMMERCIAL-LENDING REVIEW COMMITTEE
+</div>
+
+</div>
+
+## About This Document
+
+This is the *alternative* capital-stack proposal to Amarillo National Bank (ANB) — a parallel companion to the conventional acquisition-mortgage proposal. The conventional proposal asks ANB to finance the acquisition. **This proposal asks ANB to finance only the renovation construction** while the seller (Cinergy 110 LLC / Cinergy Entertainment Group) carries the acquisition note. Both versions are submitted so the bank's underwriter and the church's Building Committee can compare side-by-side and adopt whichever the seller actually agrees to. Final terms return to the Power Church Building Committee and to ANB for ratification.
+
+## Loan Request Summary
 
 | Item | Detail |
 |---|---|
