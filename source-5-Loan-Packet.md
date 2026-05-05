@@ -69,7 +69,7 @@ The church owns the 1344 SE 10th Avenue property outright. Per broker valuation 
 
 ### Mission Alignment for Bank
 
-Power Church is a member of the broader Pentecostal/charismatic Christian community in Amarillo. The 100 Men Initiative is in active development for a 2026-07-15 launch at the Pastors Tribe Conference. Long-term, the new facility will serve as both a worship venue and a multi-use community asset — daycare, youth events, weddings, conferences, light commercial leasing of underutilized square footage.
+Power Church is a member of the broader Christian community in Amarillo. The Pastors Tribe Initiative is in active development for a launch at the Pastors Tribe Conference on 2026-07-15, an effort to serve pastors, ministry leaders, and the wider community more effectively. Long-term, the new facility will serve as both a worship venue and a multi-use community asset — daycare, youth events, weddings, conferences, and light commercial leasing of underutilized square footage.
 
 ---
 
@@ -204,6 +204,23 @@ The property is zoned **HC (Heavy Commercial)** under City of Amarillo Code §4-
 | **Blended (60% income / 30% comp / 10% cost)** | **$7.5M** | **$9.1M** | **$11.0M** |
 
 (Methodology and source citations: see `source-4-ARV-Research.md`, 301-line research package on file.)
+
+### Why Comparable Sales Are Pulled From Across Texas (and Beyond)
+
+Before listing the comps, a brief note on methodology — because this question comes up in every committee meeting and every bank review:
+
+**Special-purpose properties (theater conversions, large religious assemblies, mega-church campuses) trade infrequently.** A property like the UA Theater — 83,422 sqft, former cinema converting to multi-use church — has perhaps one or two transactions per decade in any given metro. To build a defensible appraisal, the appraiser MUST cast a wider geographic net to find enough valid data points.
+
+This is exactly how lenders underwrite specialty CRE everywhere. **As a real-world example: when a Texas borrower recently sought financing for a sixplex multifamily property, the lender's appraiser had to pull comps as far as Galveston** (~600 miles from Amarillo) because there weren't enough recent sixplex sales in the immediate metro to support a single-market comparison. That's standard appraisal practice — not a weakness of the deal.
+
+For the subject property, our comp set is layered:
+
+1. **Direct theater-to-church conversions (national)** — the closest *property class* match, even if not in Texas. These tell us how the market values the conversion of a vacant cinema into a religious assembly facility.
+2. **Texas religious assemblies (state)** — Lubbock and Houston are the closest Texas comps; Lubbock for Panhandle adjacency, Houston for urban-Texas pricing benchmark.
+3. **Local Amarillo religious listings** — direct geographic match; though small sample (7 active listings) and smaller building sizes, these confirm the local market range.
+4. **The subject's own 2015 prior sale** — at $12,500,000 verified through Potter County recorded deed, this is the most authoritative single comp because it's the same building.
+
+**The blend is intentional.** A bank's MAI appraiser will weight the income approach 50–60%, the comp approach 30–40%, and the cost approach 10–15%. The comp approach can absorb out-of-market data points because the income approach (which is most heavily weighted) is local-market-driven and ties directly to documented operating cash flow.
 
 ### Comparable Sales (Theater→Church Conversion Class — Verified)
 
