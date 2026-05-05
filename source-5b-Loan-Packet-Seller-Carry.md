@@ -16,7 +16,7 @@ date: "May 5, 2026"
 | **Subject Property** | 8275 W Amarillo Blvd, Amarillo, TX 79124 |
 | **Purchase Price** | $3,800,000 |
 | **Capital Structure** | Seller carry on acquisition + ANB construction loan |
-| **Down Payment (Power Church equity)** | $760,000 (20% from LOC against SE 10th Ave) |
+| **Down Payment (Power Church equity)** | $760,000 (cash on hand at ANB + planned land-sale proceeds) |
 | **Seller Carryback Note** | $3,040,000 carried by Cinergy 110 LLC (interest-only, 6.0%, 24-month balloon) |
 | **ANB Construction Loan (THIS REQUEST)** | **~$2,000,000** (estimate; final amount subject to GC bid and ANB underwriting) |
 | **Refi at Month 13–18** | Single permanent commercial mortgage rolling up the seller note + construction draw |
@@ -42,7 +42,7 @@ Power Church is a growing congregation currently meeting at 1344 SE 10th Avenue,
 The transaction at a glance:
 
 - **$3.8M acquisition** of a fully-built 83,422 sqft commercial structure on 10.61 acres
-- **$760K equity** from Power Church (sourced from a line of credit against the church's existing SE 10th Ave property, appraised at $1.8M – $2.0M)
+- **$760K equity** from Power Church, sourced from existing church cash reserves on deposit at ANB combined with proceeds from the planned sale of additional church-owned land
 - **$3.04M seller carryback** from Cinergy 110 LLC (interest-only, 6%, 24-month balloon)
 - **~$2.0M ANB construction loan** (this proposal — estimate, pending GC bid) for the renovation, drawn progressively over 12 months
 - **Refi at Month 13–18** consolidates seller note + construction draw into a single ~$5.04M permanent commercial mortgage from ANB
@@ -79,7 +79,7 @@ The church's existing $25K/month deployable net surplus represents 25% of gross 
 
 ### Existing Real Estate
 
-The church owns the 1344 SE 10th Avenue property outright. Per broker valuation discussions with Llano Realty (Deeter Prater, listing agent for the subject property), the SE 10th Ave building appraises in the **$1.8M – $2.0M** range. Power Church plans to draw a line of credit against this asset (60% LTV ≈ $1.14M) to fund the down payment on the subject property. The SE 10th Ave property remains a Power Church asset post-closing, providing balance-sheet strength and standby liquidity.
+The church owns the 1344 SE 10th Avenue property outright. Per broker valuation discussions with Llano Realty (Deeter Prater, listing agent for the subject property), the SE 10th Ave building appraises in the **$1.8M – $2.0M** range. The SE 10th Ave property is NOT pledged or drawn against for this transaction — it remains a debt-free Power Church asset post-closing, providing balance-sheet strength and future optionality.
 
 ### Mission Alignment for Bank
 
@@ -218,9 +218,9 @@ At Month 13–18, ANB refinances both the seller note and the construction loan 
 
 ### The SE 10th Ave Property — Additional Church Asset
 
-Power Church owns 1344 SE 10th Avenue outright. Per Llano Realty's broker valuation, the existing property appraises at **$1.8M – $2.0M**. This property is NOT being sold to fund the UA Theater acquisition. Power Church plans to draw a Line of Credit (~$1.14M at 60% LTV) against the SE 10th Ave property to fund the down payment and closing costs. The SE 10th Ave building remains the church's asset, providing standby liquidity, future optionality, and balance-sheet strength.
+Power Church owns 1344 SE 10th Avenue outright. Per Llano Realty's broker valuation, the existing property appraises at **$1.8M – $2.0M**. This property is NOT pledged, drawn against, or sold to fund the UA Theater acquisition. The down payment comes from existing church cash reserves on deposit at ANB plus proceeds from a planned sale of additional church-owned land. The SE 10th Ave building remains the church's debt-free asset, providing future optionality, balance-sheet strength, and an available principal-paydown source if the church later elects to sell.
 
-**Total real estate held by Power Church post-closing: ~$5.7M of asset value at acquisition basis (~$11M at post-renovation ARV) backed by ~$5.04M of senior bank debt + LOC drawn.**
+**Total real estate held by Power Church post-closing: ~$5.7M of asset value at acquisition basis (~$11M at post-renovation ARV) backed by the senior bank debt only — no LOC, no second lien.**
 
 ---
 
@@ -244,7 +244,7 @@ The ANB construction loan funds the renovation only. The acquisition is funded b
 
 | Source | Amount |
 |---|---|
-| Power Church equity (LOC against SE 10th Ave) | $760,000 |
+| Power Church equity (cash on hand at ANB + planned land-sale proceeds) | $760,000 |
 | Cinergy seller carryback (acquisition note) | $3,040,000 |
 | ANB construction loan (this request, estimate) | ~$2,000,000 |
 | Power Church operating reserves (contingency, closing) | $200,000 |
@@ -267,7 +267,7 @@ The ANB construction loan funds the renovation only. The acquisition is funded b
 | Source | Amount | Notes |
 |---|---|---|
 | Cinergy seller carryback (acquisition note) | $3,040,000 | 6% IO, 24-month balloon |
-| Power Church equity (LOC against SE 10th Ave) | $760,000 | 20% down on $3.8M |
+| Power Church equity (cash on hand at ANB + planned land-sale proceeds) | $760,000 | 20% down on $3.8M |
 | ANB construction loan (this request, drawn over 12 months) | ~$2,000,000 | 8% IO during build |
 | Power Church operating reserves (closing + contingency) | $200,000 | |
 | **Total Sources (estimate)** | **~$6,000,000** | |
@@ -296,8 +296,7 @@ The seller note and the ANB construction loan are both interest-only during the 
 | ANB construction loan IO (~$2.0M est. @ 8.0%, drawn progressively — avg balance ~$1M) | ~$6,667 |
 | UA Theater operations (insurance, utilities, security during reno) | $5,000 |
 | SE 10th Ave carrying (until sold or repurposed) | $5,000 |
-| LOC interest ($760K @ 8.5%) | $5,383 |
-| **Construction-phase total monthly burden** | **~$37,250** |
+| **Construction-phase total monthly burden** | **~$31,867** |
 
 **Power Church monthly income during construction:**
 
@@ -308,13 +307,13 @@ The seller note and the ANB construction loan are both interest-only during the 
 
 **Construction-phase deficit by month (illustrative):**
 
-| Month | Tithes | Supp. Income | Total Income | Burden | Deficit |
+| Month | Tithes | Supp. Income | Total Income | Burden | Net |
 |---|---|---|---|---|---|
-| 1 | $25,000 | $0 | $25,000 | $37,250 | ($12,250) |
-| 6 | $25,000 | $9,875 | $34,875 | $37,250 | ($2,375) |
-| 12 | $25,000 | $19,750 | $44,750 | $37,250 | +$7,500 |
+| 1 | $25,000 | $0 | $25,000 | $31,867 | ($6,867) |
+| 6 | $25,000 | $9,875 | $34,875 | $31,867 | +$3,008 |
+| 12 | $25,000 | $19,750 | $44,750 | $31,867 | +$12,883 |
 
-**Cumulative 12-month construction-phase deficit (estimate):** roughly **$60K–$100K**, fully covered by the LOC reserve ($380K available after the down-payment draw) and the $200K of operating reserves built into Sources.
+**Cumulative 12-month construction-phase deficit (estimate):** roughly **$25K–$50K**, fully covered by the $200K of operating reserves built into Sources plus existing church capital-campaign cash.
 
 ### Permanent Phase (Post-Refi, Month 13+)
 
@@ -365,7 +364,7 @@ At Month 13–18, both notes consolidate into a single permanent commercial mort
 |---|---|
 | **Seller balloon at Month 24** | Refi at Month 13–18 retires the seller note well before the 24-month balloon. ANB's permanent commitment is the takeout. |
 | **Refi appraisal disappoints** | Three-approach valuation supports $7.5M (low) – $11M (high) ARV. Even at the LOW scenario, $5.04M permanent / $7.5M ARV = 67% LTV — under the 75% threshold. |
-| **Construction cost overrun** | $200K operating reserve plus LOC headroom plus phased draw structure. ANB controls construction draws against signed GC contracts and inspector certifications. |
+| **Construction cost overrun** | $200K operating reserve plus the church's debt-free SE 10th Ave property as available collateral if a contingency draw is required, plus phased draw structure. ANB controls construction draws against signed GC contracts and inspector certifications. |
 | **Permanent-phase cash flow tight at tithes-only** | SE 10th Ave sale is the primary mitigant — generates ~$1.5M of cash for principal reduction. Layer 2 supplementary income (Year-1 RAMP curve) is the second. |
 | **Cinergy refuses carryback** | This proposal is moot. The conventional proposal (`5-Loan-Packet`) is the fallback — ANB underwrites the acquisition mortgage directly. |
 | **Title / lien (Cinergy's $125M Truist facility)** | Truist will issue a release on closing; Power Church takes free-and-clear title. The seller note is a NEW first lien on the property, recorded at closing. |
@@ -386,7 +385,7 @@ Three reasons: (a) it reduces ANB's at-risk position during the highest-risk win
 Cinergy 110 LLC is a single-asset entity owned by Cinergy Entertainment Group of Dallas, which has a $125M Truist credit facility for portfolio expansion. They have institutional capital backing and the operational sophistication to evaluate carryback structures. Their cost basis on this asset is likely below $3M (2023 cash acquisition from TBB Amarillo LLC, deed price unrecorded). At $760K cash down + $3.04M paper, Cinergy is paid back to par on day one — the carry is essentially zero-risk seller paper for them, with a defined 24-month exit.
 
 **Q4: What happens to the ANB construction loan if the seller note defaults or balloons before refi is complete?**
-ANB's construction loan is secured by a junior lien on the property and a senior lien on the renovation improvements. If the seller note defaults, Power Church (via the LOC headroom + capital campaign + SE 10th Ave equity) has multiple paths to cure, and ANB can extend the construction loan to a permanent mortgage on its own terms even if the original 24-month balloon arrives before refi is otherwise scheduled. The seller will not be inclined to foreclose on a property that requires their own secondary disposition; a workout is the realistic path even in stress.
+ANB's construction loan is secured by a junior lien on the property and a senior lien on the renovation improvements. If the seller note defaults, Power Church has multiple paths to cure (capital-campaign reserve, debt-free SE 10th Ave property as available collateral, and additional church-owned land), and ANB can extend the construction loan to a permanent mortgage on its own terms even if the original 24-month balloon arrives before refi is otherwise scheduled. The seller will not be inclined to foreclose on a property that requires their own secondary disposition; a workout is the realistic path even in stress.
 
 **Q5: How does the bank underwrite the ~$2M construction loan estimate before the GC bid is in?**
 ANB will issue a conditional commitment based on this estimate, with final loan amount and draw schedule set after the Building Committee's GC bid review. ANB's loan committee retains approval authority on the final number. The ~$2M figure represents Power Church's working budget based on $24/sqft for 83K sqft (theater-to-sanctuary conversion). Real-world range is plausibly $1.5M–$3.5M; the formal proposal will be re-priced when the GC bid is signed.
@@ -445,6 +444,7 @@ This is standard relationship banking and Power Church welcomes the structure.
 |---|---|---|
 | Pastor / Authorized Signatory | Manny De Los Santos | [TO INSERT — cell + email] |
 | Building Committee Chair | [TO INSERT] | [TO INSERT] |
+| Building Committee Member | Toby Torres III | [TO INSERT] |
 | Volunteer Treasurer / Bookkeeper | [TO INSERT] | [TO INSERT] |
 | Listing Agent (seller-side) | Deeter Prater | Llano Realty, Amarillo |
 | Title Company | Julie Wilkinson | American Land Title |
@@ -482,8 +482,8 @@ This is standard relationship banking and Power Church welcomes the structure.
 | Tithes-only DSCR at permanent phase | **1.16x** (positive) | 0.70x (insufficient — needs SE 10th sale OR Layer 2 income) |
 | Layer 2 conservative DSCR at permanent phase | 2.08x | 1.26x |
 | Renovation funded by | Operating cash flow + future capital campaign | ANB construction loan |
-| Construction-phase cash flow burden | ~$54K/mo (tighter Year 1) | ~$37K/mo (LOC absorbs deficit) |
-| Decisive variable | LOC against SE 10th + bank rate | Seller agrees to $3.04M carryback at 6% IO |
+| Construction-phase cash flow burden | ~$49K/mo (Year-1 transition) | ~$32K/mo |
+| Decisive variable | ANB approves $3.04M acquisition mortgage at the rates modeled | Seller agrees to $3.04M carryback at 6% IO |
 
 **Recommendation framework:**
 

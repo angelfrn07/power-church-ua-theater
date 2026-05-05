@@ -17,7 +17,7 @@ The original new-construction plan came back at $6.8M to $7M for a 32,000 sq ft 
 
 We have three financing structures to consider:
 
-1. **Scenario A — Committee Plan (Conventional Purchase, ON THE TABLE):** $3.8M bank-approved acquisition mortgage, 20% down ($760K from a LOC against the SE 10th Ave building), $3.04M financed at ~7% / 25-yr amortizing. Renovation paid from cash flow over time.
+1. **Scenario A — Committee Plan (Conventional Purchase, ON THE TABLE):** $3.8M bank-approved acquisition mortgage, 20% down ($760K from existing church cash reserves combined with proceeds from a planned sale of additional church-owned land), $3.04M financed at ~7% / 25-yr amortizing. Renovation paid from cash flow over time.
 2. **Scenario A-Plus — Strategic Counter:** Push the seller to accept $2M cash and let us add a separate $2M bank construction loan for a full renovation. Delivers a fully renovated facility with lower long-term debt.
 3. **Scenario C — Master Lease + Buyout (Fallback):** Lease the building during construction, exercise option to buy at $3.8M post-construction. Walkable structure if anything goes sideways.
 
@@ -81,7 +81,7 @@ The UA Theater is bigger, faster, cheaper per sq ft, and allows us to operate **
 
 ### Bank Approval Status — What's Already in Place
 
-Power Church has bank approval for a **$3.8M acquisition loan** (potentially up to $4M). This is the foundation of the Scenario A committee plan. The bank's approval is for a conventional commercial mortgage at approximately 7% over a 25-year amortization with 20% down. The $760K down payment is sourced from a Line of Credit against the existing SE 10th Ave property (appraised at ~$1.9M, supporting up to $1.14M of LOC capacity).
+Power Church has bank approval for a **$3.8M acquisition loan** (potentially up to $4M) at Amarillo National Bank (ANB). This is the foundation of the Scenario A committee plan. The bank's approval is for a conventional commercial mortgage at approximately 7% over a 25-year amortization with 20% down. The $760K down payment is sourced from a combination of (a) existing church cash reserves on deposit at ANB and (b) proceeds from the planned sale of additional church-owned land. The SE 10th Ave property remains a Power Church asset and is not pledged or drawn against for this transaction.
 
 For reference, an earlier exploratory analysis considered a different "term loan plus fundraise" structure that's no longer relevant to the active deal. The math from that exploration is shown below for completeness but is not the path forward:
 

@@ -29,7 +29,7 @@ Power Church is a growing Pentecostal congregation currently meeting at 1344 SE 
 The transaction is straightforward:
 
 - **$3.8M acquisition** of a fully-built 83,422 sqft commercial structure on 10.61 acres
-- **$760K equity** from Power Church (sourced from a line of credit against the church's existing SE 10th Ave property, appraised at $1.8M – $2.0M)
+- **$760K equity** from Power Church, sourced from (a) existing church cash reserves on deposit at ANB and (b) proceeds from the planned sale of additional church-owned land
 - **$3.04M conventional commercial mortgage** from the lending bank (this proposal)
 - **No construction loan requested** — initial renovations ($100K – $500K) will be funded from operating cash flow over the first 18 months
 
@@ -65,7 +65,7 @@ The church's existing $25K/month deployable net surplus represents 25% of gross 
 
 ### Existing Real Estate
 
-The church owns the 1344 SE 10th Avenue property outright. Per broker valuation discussions with Llano Realty (Deeter Prater, listing agent for the subject property), the SE 10th Ave building appraises in the **$1.8M – $2.0M** range. Power Church plans to draw a line of credit against this asset (60% LTV ≈ $1.14M) to fund the down payment on the subject property, then sell the SE 10th Ave property post-construction to retire the LOC.
+The church owns the 1344 SE 10th Avenue property outright. Per broker valuation discussions with Llano Realty (Deeter Prater, listing agent for the subject property), the SE 10th Ave building appraises in the **$1.8M – $2.0M** range. The SE 10th Ave property remains a Power Church asset post-closing — it is not pledged, drawn against, or otherwise encumbered as part of this transaction. Power Church may evaluate sale or repurposing of SE 10th Ave on its own timeline, with proceeds available to apply against the new mortgage if the church elects.
 
 ### Mission Alignment for Bank
 
@@ -262,7 +262,7 @@ For full transparency, here's what the picture looks like if Power Church later 
 | Acquisition mortgage (THIS request) | $3,040,000 | Conventional, 80% LTV at acquisition |
 | Future construction loan (potential, separate request) | $2,000,000 | If Phase 2 capital campaign doesn't fully fund the renovation |
 | **Maximum combined bank exposure** | **$5,040,000** | If both are extended |
-| Power Church equity (LOC against SE 10th + cash) | $950,000+ | At closing (down + closing costs + reserve) |
+| Power Church equity (cash on hand + planned land-sale proceeds) | $950,000+ | At closing (down + closing costs + reserve) |
 | **Total deal envelope** | **~$5.99M** | Aligns with the $6M total project cost the committee is targeting |
 
 **Coverage at the full project envelope of $5.04M combined bank exposure:**
@@ -279,13 +279,13 @@ For full transparency, here's what the picture looks like if Power Church later 
 
 Power Church owns **1344 SE 10th Avenue** outright. Per Llano Realty's broker valuation (Deeter Prater), the existing property appraises in the **$1.8M – $2.0M range**.
 
-This property is NOT being sold to fund the UA Theater acquisition. Power Church plans to draw a Line of Credit (~$1.14M at 60% LTV) against the SE 10th Ave property to fund the down payment and closing costs on the subject acquisition. The SE 10th Ave building remains the church's asset, providing:
+This property is NOT being sold or pledged to fund the UA Theater acquisition. The down payment on the subject property comes from existing church cash reserves on deposit at ANB plus proceeds from the planned sale of additional church-owned land. The SE 10th Ave building remains the church's debt-free asset, providing:
 
-1. **Standby liquidity** — the LOC can be drawn beyond the down-payment portion if needed for Year-1 transition cash flow
-2. **Future optionality** — sell at market timing of the church's choosing, lease to a third party, or convert to a ministry use (school, daycare, community center)
-3. **Balance-sheet strength** — Power Church's combined real estate footprint after closing will include both the SE 10th Ave property (~$1.9M) AND the UA Theater property (~$3.8M acquisition basis, $9.1M post-renovation ARV)
+1. **Future optionality** — sell at market timing of the church's choosing, lease to a third party, or convert to a ministry use (school, daycare, community center)
+2. **Balance-sheet strength** — Power Church's combined real estate footprint after closing will include both the SE 10th Ave property (~$1.9M, debt-free) AND the UA Theater property (~$3.8M acquisition basis, $9.1M post-renovation ARV)
+3. **Available principal-paydown source** — if the church later elects to sell SE 10th Ave, ~$1.5M of net proceeds could be applied against the senior mortgage to materially reduce permanent debt service
 
-**Total real estate held by Power Church post-closing: ~$11M of asset value backed by ~$3.04M of senior bank debt + ~$760K of LOC drawn = $3.8M total liabilities on $11M of real estate.** Loan-to-value across the full church portfolio: **35%.**
+**Total real estate held by Power Church post-closing: ~$11M of asset value backed by ~$3.04M of senior bank debt and zero other secured liabilities** (no LOC, no second lien). Loan-to-value across the full church portfolio: **27.6%.**
 
 ---
 
@@ -312,7 +312,7 @@ A future capital campaign will fund the more comprehensive renovation (full clas
 | Source | Amount | Notes |
 |---|---|---|
 | **Conventional commercial mortgage (THIS REQUEST)** | **$3,040,000** | 80% LTV, 25-yr amortization, 7.00% fixed |
-| Power Church equity (LOC against SE 10th Ave) | $760,000 | 20% equity contribution |
+| Power Church equity (cash on hand + land-sale proceeds) | $760,000 | 20% equity contribution |
 | Power Church operating reserves | $190,000 | Closing costs + initial reno + contingency |
 | **Total Sources** | **$3,990,000** | |
 
@@ -352,7 +352,7 @@ A future capital campaign will fund the more comprehensive renovation (full clas
 
 **Even with zero supplementary income, the existing tithe surplus alone covers debt service with a 1.16x DSCR.** This is the safety floor — Power Church's existing ministry income alone services the loan.
 
-### Year-1 Total Facility Cost (incl. SE 10th transition + LOC interest)
+### Year-1 Total Facility Cost (incl. SE 10th Ave transition operations)
 
 The first 12 months show the full carrying cost picture:
 
@@ -360,14 +360,13 @@ The first 12 months show the full carrying cost picture:
 |---|---|
 | Bank P+I on subject property | $21,486 |
 | UA Theater operations (insurance, utilities, maintenance) | $22,500 |
-| SE 10th Ave carrying (until sold) | $5,000 |
-| LOC interest ($760K @ 8.5%) | $5,383 |
-| **Year-1 total monthly** | **$54,369** |
+| SE 10th Ave operations (continued ministry use during transition) | $5,000 |
+| **Year-1 total monthly** | **$48,986** |
 | Layer 2 income | $44,750 |
-| **Year-1 monthly deficit (transition)** | **($9,619)** |
-| 12-month cumulative deficit | **($115,433)** |
+| **Year-1 monthly deficit (transition)** | **($4,236)** |
+| 12-month cumulative deficit | **($50,832)** |
 
-This Year-1 transition deficit is fully covered by the LOC's remaining capacity ($380K reserve after the down-payment draw). At Month 12, sale of SE 10th Ave at appraised $1.9M retires the LOC and generates ~$1.0M of net cash to Power Church. **Steady-state monthly facility cost from Year 2 onward is $43,986 — well within Power Church's combined income.**
+This modest Year-1 transition deficit is covered by the church's operating cash position and capital-campaign reserve. **Steady-state monthly facility cost from Year 2 onward is $43,986 — well within Power Church's combined income.**
 
 ---
 
@@ -377,7 +376,7 @@ This Year-1 transition deficit is fully covered by the LOC's remaining capacity 
 |---|---|
 | **Borrower default** | First-lien commercial mortgage; property substantially over-collateralized; 501(c)(3) borrower with established multi-year cash flow |
 | **Property value decline** | At 33% LTV (mid-ARV), property would have to lose 67% of value before bank principal exposure begins. Replacement cost alone is $20M+. |
-| **Cash-flow disruption (Year 1 transition)** | LOC against SE 10th Ave provides $380K reserve after down-payment draw; sale of SE 10th retires LOC by Month 12 |
+| **Cash-flow disruption (Year 1 transition)** | Modest Year-1 deficit (~$4K/mo) covered by church operating cash and capital-campaign reserve; SE 10th Ave debt-free and available for sale at the church's discretion if additional liquidity is desired |
 | **Special-purpose property risk** | Building is multi-use capable; convertible to office, retail, event-venue, or warehouse if church operations cease |
 | **Title / lien risk (Cinergy's existing $80M Truist facility)** | Truist will issue a release on closing; Power Church takes free-and-clear title insured by American Land Title (Julie Wilkinson) |
 | **Restrictive covenant against future theater use** | This covenant blocks competitor cinemas from re-entering the property — it is a *positive* for Power Church (eliminates re-tenanting competition risk) and does NOT impair religious or community-facility use. Title commitment will surface and confirm. |
@@ -424,8 +423,7 @@ Property Condition Report (PCR) will be commissioned during due diligence. Antic
 | Bank loan documentation | Concurrent with due diligence |
 | Closing target | Within 15 days of due diligence expiration |
 | Move-in / first service in new building | 30-60 days post-closing |
-| SE 10th Ave sale | Within 90 days post-closing |
-| LOC retirement | At SE 10th sale |
+| SE 10th Ave evaluation | Church-determined timing post-closing |
 | Phase 1 renovation complete | Month 12 |
 
 ---
@@ -450,6 +448,7 @@ This is standard relationship banking and Power Church welcomes the structure.
 |---|---|---|
 | Pastor / Authorized Signatory | Manny De Los Santos | [TO INSERT] |
 | Building Committee Chair | [TO INSERT] | [TO INSERT] |
+| Building Committee Member | Toby Torres III | [TO INSERT] |
 | Volunteer Treasurer / Bookkeeper | [TO INSERT] | [TO INSERT] |
 | Building Committee Liaison | Power Church Building Committee | [TO INSERT — committee email] |
 | Listing Agent (seller-side) | Deeter Prater | Llano Realty, Amarillo |
