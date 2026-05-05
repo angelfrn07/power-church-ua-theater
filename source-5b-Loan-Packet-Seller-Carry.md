@@ -16,7 +16,7 @@ date: "May 5, 2026"
 | **Subject Property** | 8275 W Amarillo Blvd, Amarillo, TX 79124 |
 | **Purchase Price** | $3,800,000 |
 | **Capital Structure** | Seller carry on acquisition + ANB construction loan |
-| **Down Payment (Power Church equity)** | $760,000 (cash on hand at ANB + planned land-sale proceeds) |
+| **Down Payment (Power Church equity)** | $760,000 (Power Church Building Fund) |
 | **Seller Carryback Note** | $3,040,000 carried by Cinergy 110 LLC (interest-only, 6.0%, 24-month balloon) |
 | **ANB Construction Loan (THIS REQUEST)** | **~$2,000,000** (estimate; final amount subject to GC bid and ANB underwriting) |
 | **Refi at Month 13–18** | Single permanent commercial mortgage rolling up the seller note + construction draw |
@@ -42,7 +42,7 @@ Power Church is a growing congregation currently meeting at 1344 SE 10th Avenue,
 The transaction at a glance:
 
 - **$3.8M acquisition** of a fully-built 83,422 sqft commercial structure on 10.61 acres
-- **$760K equity** from Power Church, sourced from existing church cash reserves on deposit at ANB combined with proceeds from the planned sale of additional church-owned land
+- **$760K equity** from the **Power Church Building Fund** (a designated capital pool the church has been building toward this acquisition; fully on deposit and verifiable at closing)
 - **$3.04M seller carryback** from Cinergy 110 LLC (interest-only, 6%, 24-month balloon)
 - **~$2.0M ANB construction loan** (this proposal — estimate, pending GC bid) for the renovation, drawn progressively over 12 months
 - **Refi at Month 13–18** consolidates seller note + construction draw into a single ~$5.04M permanent commercial mortgage from ANB
@@ -222,7 +222,7 @@ At Month 13–18, ANB refinances both the seller note and the construction loan 
 
 ### The SE 10th Ave Property — Additional Church Asset
 
-Power Church owns 1344 SE 10th Avenue outright. Per Llano Realty's broker valuation, the existing property appraises at **$1.8M – $2.0M**. This property is NOT pledged, drawn against, or sold to fund the UA Theater acquisition. The down payment comes from existing church cash reserves on deposit at ANB plus proceeds from a planned sale of additional church-owned land. The SE 10th Ave building remains the church's debt-free asset, providing future optionality, balance-sheet strength, and an available principal-paydown source if the church later elects to sell.
+Power Church owns 1344 SE 10th Avenue outright. Per Llano Realty's broker valuation, the existing property appraises at **$1.8M – $2.0M**. This property is NOT pledged, drawn against, or sold to fund the UA Theater acquisition. The down payment comes entirely from the **Power Church Building Fund**, a designated capital pool the church has been building toward this acquisition. The SE 10th Ave building remains the church's debt-free asset, providing future optionality, balance-sheet strength, and an available principal-paydown source if the church later elects to sell.
 
 **Total real estate held by Power Church post-closing: ~$5.7M of asset value at acquisition basis (~$11M at post-renovation ARV) backed by the senior bank debt only — no LOC, no second lien.**
 
@@ -248,7 +248,7 @@ The ANB construction loan funds the renovation only. The acquisition is funded b
 
 | Source | Amount |
 |---|---|
-| Power Church equity (cash on hand at ANB + planned land-sale proceeds) | $760,000 |
+| Power Church equity (Power Church Building Fund) | $760,000 |
 | Cinergy seller carryback (acquisition note) | $3,040,000 |
 | ANB construction loan (this request, estimate) | ~$2,000,000 |
 | Power Church operating reserves (contingency, closing) | $200,000 |
@@ -271,7 +271,7 @@ The ANB construction loan funds the renovation only. The acquisition is funded b
 | Source | Amount | Notes |
 |---|---|---|
 | Cinergy seller carryback (acquisition note) | $3,040,000 | 6% IO, 24-month balloon |
-| Power Church equity (cash on hand at ANB + planned land-sale proceeds) | $760,000 | 20% down on $3.8M |
+| Power Church equity (Power Church Building Fund) | $760,000 | 20% down on $3.8M |
 | ANB construction loan (this request, drawn over 12 months) | ~$2,000,000 | 8% IO during build |
 | Power Church operating reserves (closing + contingency) | $200,000 | |
 | **Total Sources (estimate)** | **~$6,000,000** | |
@@ -447,7 +447,6 @@ This is standard relationship banking and Power Church welcomes the structure.
 | Role | Name | Contact |
 |---|---|---|
 | Pastor / Authorized Signatory | Manny De Los Santos | [TO INSERT — cell + email] |
-| Building Committee Chair | [TO INSERT] | [TO INSERT] |
 | Building Committee Member | Toby Torres III | [TO INSERT] |
 | Volunteer Treasurer / Bookkeeper | [TO INSERT] | [TO INSERT] |
 | Listing Agent (seller-side) | Deeter Prater | Llano Realty, Amarillo |

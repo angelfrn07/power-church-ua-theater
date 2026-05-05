@@ -29,7 +29,7 @@ Power Church is a growing Pentecostal congregation currently meeting at 1344 SE 
 The transaction is straightforward:
 
 - **$3.8M acquisition** of a fully-built 83,422 sqft commercial structure on 10.61 acres
-- **$760K equity** from Power Church, sourced from (a) existing church cash reserves on deposit at ANB and (b) proceeds from the planned sale of additional church-owned land
+- **$760K equity** from the **Power Church Building Fund** (a designated capital pool the church has been building toward this acquisition; fully on deposit and verifiable at closing)
 - **$3.04M conventional commercial mortgage** from the lending bank (this proposal)
 - **No construction loan requested** — initial renovations ($100K – $500K) will be funded from operating cash flow over the first 18 months
 
@@ -266,7 +266,7 @@ For full transparency, here's what the picture looks like if Power Church later 
 | Acquisition mortgage (THIS request) | $3,040,000 | Conventional, 80% LTV at acquisition |
 | Future construction loan (potential, separate request) | $2,000,000 | If Phase 2 capital campaign doesn't fully fund the renovation |
 | **Maximum combined bank exposure** | **$5,040,000** | If both are extended |
-| Power Church equity (cash on hand + planned land-sale proceeds) | $950,000+ | At closing (down + closing costs + reserve) |
+| Power Church equity (Power Church Building Fund) | $950,000+ | At closing (down + closing costs + reserve) |
 | **Total deal envelope** | **~$5.99M** | Aligns with the $6M total project cost the committee is targeting |
 
 **Coverage at the full project envelope of $5.04M combined bank exposure:**
@@ -283,7 +283,7 @@ For full transparency, here's what the picture looks like if Power Church later 
 
 Power Church owns **1344 SE 10th Avenue** outright. Per Llano Realty's broker valuation (Deeter Prater), the existing property appraises in the **$1.8M – $2.0M range**.
 
-This property is NOT being sold or pledged to fund the UA Theater acquisition. The down payment on the subject property comes from existing church cash reserves on deposit at ANB plus proceeds from the planned sale of additional church-owned land. The SE 10th Ave building remains the church's debt-free asset, providing:
+This property is NOT being sold or pledged to fund the UA Theater acquisition. The down payment on the subject property comes entirely from the **Power Church Building Fund**, a designated capital pool the church has been building toward this acquisition. The SE 10th Ave building remains the church's debt-free asset, providing:
 
 1. **Future optionality** — sell at market timing of the church's choosing, lease to a third party, or convert to a ministry use (school, daycare, community center)
 2. **Balance-sheet strength** — Power Church's combined real estate footprint after closing will include both the SE 10th Ave property (~$1.9M, debt-free) AND the UA Theater property (~$3.8M acquisition basis, $9.1M post-renovation ARV)
@@ -316,7 +316,7 @@ A future capital campaign will fund the more comprehensive renovation (full clas
 | Source | Amount | Notes |
 |---|---|---|
 | **Conventional commercial mortgage (THIS REQUEST)** | **$3,040,000** | 80% LTV, 25-yr amortization, 7.00% fixed |
-| Power Church equity (cash on hand + land-sale proceeds) | $760,000 | 20% equity contribution |
+| Power Church equity (Power Church Building Fund) | $760,000 | 20% equity contribution |
 | Power Church operating reserves | $190,000 | Closing costs + initial reno + contingency |
 | **Total Sources** | **$3,990,000** | |
 
@@ -451,7 +451,6 @@ This is standard relationship banking and Power Church welcomes the structure.
 | Role | Name | Contact |
 |---|---|---|
 | Pastor / Authorized Signatory | Manny De Los Santos | [TO INSERT] |
-| Building Committee Chair | [TO INSERT] | [TO INSERT] |
 | Building Committee Member | Toby Torres III | [TO INSERT] |
 | Volunteer Treasurer / Bookkeeper | [TO INSERT] | [TO INSERT] |
 | Building Committee Liaison | Power Church Building Committee | [TO INSERT — committee email] |
