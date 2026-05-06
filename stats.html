@@ -3,7 +3,26 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, nofollow" />
 <title>Power Church · Visit Stats</title>
+<script>
+(function () {
+  var KEY = 'pcua-private-2026';
+  var STORAGE = 'pcua-admin-key';
+  try {
+    var params = new URLSearchParams(location.search);
+    var provided = params.get('key');
+    var stored = sessionStorage.getItem(STORAGE);
+    if (provided === KEY) {
+      sessionStorage.setItem(STORAGE, KEY);
+    } else if (stored !== KEY) {
+      location.replace('index.html');
+    }
+  } catch (e) {
+    location.replace('index.html');
+  }
+})();
+</script>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Anton&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
 <script src="https://cdn.tailwindcss.com"></script>
 <style>
