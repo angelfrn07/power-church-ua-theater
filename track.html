@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Power Church · Tracked Link Generator</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Anton&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  :root { --ink:#0d0d0d; --moss:#ff6123; --moss-2:#ff7a47; --cream:#fef6ed; --line:#f0d4b1; }
+  body { background: var(--cream); color: var(--ink); font-family: 'Inter', system-ui, sans-serif; }
+  .pp { font-family: 'Anton', sans-serif; font-weight: 400; text-transform: uppercase; letter-spacing: 0.01em; line-height: 1.05; }
+  .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+  .accent-line { height: 4px; background: linear-gradient(90deg, var(--moss) 0%, var(--moss-2) 50%, transparent 100%); }
+  .card { background: white; border: 1px solid var(--line); }
+</style>
+</head>
+<body>
+
+<div class="max-w-3xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+
+  <header class="mb-8">
+    <a href="index.html" class="inline-flex items-center gap-2 mb-4 px-3 py-2 rounded-lg bg-white border border-[color:var(--line)] hover:border-[color:var(--moss)] text-stone-700 hover:text-[color:var(--moss)] text-xs font-bold uppercase tracking-wider transition-colors">
+      <span>←</span> Back to Packet
+    </a>
+    <div class="text-xs uppercase tracking-[0.22em] text-[color:var(--moss)] font-bold mb-2">Power Church · Building Committee</div>
+    <h1 class="pp text-4xl sm:text-5xl">Tracked Link Generator</h1>
+    <p class="mt-3 text-stone-700 text-sm sm:text-base max-w-2xl">
+      Make a unique URL for every named recipient before you text or email it. The site logs each visit
+      with its tag so you can see on the <a href="stats.html" class="text-[color:var(--moss)] font-bold hover:underline">stats page</a> exactly who visited and what they opened.
+    </p>
+    <div class="accent-line mt-4"></div>
+  </header>
+
+  <!-- Generator card -->
+  <div class="card rounded-2xl p-5 sm:p-6 mb-6">
+    <h2 class="pp text-2xl mb-4">Generate a tracked URL</h2>
+
+    <div class="space-y-4 text-sm">
+      <div>
+        <label class="block font-bold uppercase tracking-wider text-xs text-stone-600 mb-1">Recipient name (short, no spaces)</label>
+        <input id="nameInput" type="text" placeholder="e.g., raul-aaf, tracy-bivins, deeter, anb-underwriter, manny, committee-toby" class="w-full px-3 py-2 border border-stone-300 rounded-lg focus:outline-none focus:border-[color:var(--moss)] mono" />
+        <p class="text-xs text-stone-500 mt-1">Use lowercase, dashes, numbers. The link only shows the tag to the analytics page — not to the visitor.</p>
+      </div>
+
+      <div>
+        <label class="block font-bold uppercase tracking-wider text-xs text-stone-600 mb-1">Where the link goes</label>
+        <select id="destSelect" class="w-full px-3 py-2 border border-stone-300 rounded-lg focus:outline-none focus:border-[color:var(--moss)]">
+          <option value="">Landing page (full packet)</option>
+          <option value="Scenario-Modeler.html">Interactive Modeler</option>
+          <option value="1-Committee-Packet.pdf">PDF · Committee Packet</option>
+          <option value="5-Loan-Packet.pdf">PDF · Loan Packet (Conventional)</option>
+          <option value="5b-Loan-Packet-Seller-Carry.pdf">PDF · Loan Packet (Seller-Carry Alternative)</option>
+          <option value="3-Seller-Pitch.pdf">PDF · Seller Pitch</option>
+          <option value="0-Pro-Forma-Detail.pdf">PDF · Pro Forma Detail</option>
+        </select>
+      </div>
+
+      <div class="bg-stone-50 rounded-lg p-4 border border-stone-200">
+        <div class="text-xs font-bold uppercase tracking-wider text-stone-600 mb-2">Your tracked link</div>
+        <div id="output" class="mono text-sm break-all text-[color:var(--moss)] mb-3 select-all">https://angelfrn07.github.io/power-church-ua-theater/?v=name</div>
+        <div class="flex gap-2 flex-wrap">
+          <button id="copyBtn" class="px-4 py-2 rounded-lg bg-[color:var(--moss)] hover:bg-[color:var(--moss-2)] text-white font-bold text-sm transition-colors">Copy URL</button>
+          <button id="copyMsgBtn" class="px-4 py-2 rounded-lg bg-stone-200 hover:bg-stone-300 text-stone-800 font-bold text-sm transition-colors">Copy as iMessage / email body</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Quick recipients -->
+  <div class="card rounded-2xl p-5 sm:p-6 mb-6">
+    <h2 class="pp text-2xl mb-2">Common recipients (one click)</h2>
+    <p class="text-xs text-stone-500 mb-4">Tap a card to autofill the form with the right tag — then pick a destination above.</p>
+    <div class="grid grid-cols-2 sm:grid-cols-3 gap-2 text-sm">
+      <button class="quickPick text-left bg-stone-50 hover:bg-orange-50 border border-stone-200 hover:border-[color:var(--moss)] rounded-lg p-3 transition-colors" data-name="manny">
+        <div class="font-bold">Pastor Manny</div><div class="text-xs text-stone-500 mono">v=manny</div>
+      </button>
+      <button class="quickPick text-left bg-stone-50 hover:bg-orange-50 border border-stone-200 hover:border-[color:var(--moss)] rounded-lg p-3 transition-colors" data-name="committee-toby">
+        <div class="font-bold">Toby Torres III</div><div class="text-xs text-stone-500 mono">v=committee-toby</div>
+      </button>
+      <button class="quickPick text-left bg-stone-50 hover:bg-orange-50 border border-stone-200 hover:border-[color:var(--moss)] rounded-lg p-3 transition-colors" data-name="committee">
+        <div class="font-bold">Committee (general)</div><div class="text-xs text-stone-500 mono">v=committee</div>
+      </button>
+      <button class="quickPick text-left bg-stone-50 hover:bg-orange-50 border border-stone-200 hover:border-[color:var(--moss)] rounded-lg p-3 transition-colors" data-name="board">
+        <div class="font-bold">Church Board</div><div class="text-xs text-stone-500 mono">v=board</div>
+      </button>
+      <button class="quickPick text-left bg-stone-50 hover:bg-orange-50 border border-stone-200 hover:border-[color:var(--moss)] rounded-lg p-3 transition-colors" data-name="anb-underwriter">
+        <div class="font-bold">ANB Underwriter</div><div class="text-xs text-stone-500 mono">v=anb-underwriter</div>
+      </button>
+      <button class="quickPick text-left bg-stone-50 hover:bg-orange-50 border border-stone-200 hover:border-[color:var(--moss)] rounded-lg p-3 transition-colors" data-name="deeter">
+        <div class="font-bold">Deeter Prater (Llano)</div><div class="text-xs text-stone-500 mono">v=deeter</div>
+      </button>
+      <button class="quickPick text-left bg-stone-50 hover:bg-orange-50 border border-stone-200 hover:border-[color:var(--moss)] rounded-lg p-3 transition-colors" data-name="cinergy">
+        <div class="font-bold">Cinergy (Seller)</div><div class="text-xs text-stone-500 mono">v=cinergy</div>
+      </button>
+      <button class="quickPick text-left bg-stone-50 hover:bg-orange-50 border border-stone-200 hover:border-[color:var(--moss)] rounded-lg p-3 transition-colors" data-name="raul-aaf">
+        <div class="font-bold">Raul / Amarillo Area Fdn</div><div class="text-xs text-stone-500 mono">v=raul-aaf</div>
+      </button>
+      <button class="quickPick text-left bg-stone-50 hover:bg-orange-50 border border-stone-200 hover:border-[color:var(--moss)] rounded-lg p-3 transition-colors" data-name="tracy-bivins">
+        <div class="font-bold">Tracy / Bivins</div><div class="text-xs text-stone-500 mono">v=tracy-bivins</div>
+      </button>
+    </div>
+  </div>
+
+  <!-- How it works -->
+  <div class="card rounded-2xl p-5 sm:p-6 mb-6">
+    <h2 class="pp text-2xl mb-3">How this works</h2>
+    <ol class="text-sm space-y-2 list-decimal pl-5">
+      <li>Pick a recipient (or type a custom name).</li>
+      <li>Pick which page or PDF you want them to land on.</li>
+      <li>Click "Copy URL" and paste it into iMessage or email.</li>
+      <li>When they click, the visit gets logged on the <a href="stats.html" class="text-[color:var(--moss)] font-bold hover:underline">stats page</a> tagged with that name — so you can see who's read what.</li>
+    </ol>
+    <p class="text-xs text-stone-500 mt-4">
+      Privacy note: the link doesn't carry any personal info — just the tag you set. The recipient never sees the tag in their browser bar's title.
+      The counter is anonymous and stores only an integer count per tag — no IP, no name, no cookies.
+    </p>
+  </div>
+
+  <div class="text-xs text-stone-500 text-center mt-12 pt-6 border-t border-[color:var(--line)]">
+    <strong>Power Church · UA Theater Pro Forma</strong><br/>
+    <a href="stats.html" class="text-[color:var(--moss)] font-bold hover:underline">View live visit stats →</a>
+  </div>
+</div>
+
+<script src="js/analytics.js"></script>
+<script>
+(function () {
+  const BASE = 'https://angelfrn07.github.io/power-church-ua-theater/';
+  const nameInput = document.getElementById('nameInput');
+  const destSelect = document.getElementById('destSelect');
+  const output = document.getElementById('output');
+  const copyBtn = document.getElementById('copyBtn');
+  const copyMsgBtn = document.getElementById('copyMsgBtn');
+
+  function sanitize(s) {
+    return (s || '').toLowerCase().replace(/[^a-z0-9-_]/g, '').slice(0, 40);
+  }
+
+  function buildUrl() {
+    const name = sanitize(nameInput.value);
+    const dest = destSelect.value || '';
+    const tag = name ? '?v=' + name : '';
+    return BASE + dest + tag;
+  }
+
+  function refresh() {
+    output.textContent = buildUrl();
+  }
+
+  function flashBtn(btn, text) {
+    const orig = btn.textContent;
+    btn.textContent = text;
+    setTimeout(() => { btn.textContent = orig; }, 1500);
+  }
+
+  nameInput.addEventListener('input', refresh);
+  destSelect.addEventListener('change', refresh);
+
+  copyBtn.addEventListener('click', async () => {
+    try {
+      await navigator.clipboard.writeText(buildUrl());
+      flashBtn(copyBtn, '✓ Copied');
+    } catch (_) {
+      output.focus(); document.execCommand && document.execCommand('selectAll');
+    }
+  });
+
+  copyMsgBtn.addEventListener('click', async () => {
+    const url = buildUrl();
+    const msg = `Power Church · UA Theater pro forma + loan packet:\n${url}\n\nLive interactive modeler + all PDFs (committee packet, loan packets, seller pitch, pro forma detail). Tap to open.`;
+    try {
+      await navigator.clipboard.writeText(msg);
+      flashBtn(copyMsgBtn, '✓ Copied message');
+    } catch (_) {}
+  });
+
+  document.querySelectorAll('.quickPick').forEach(b => {
+    b.addEventListener('click', () => {
+      nameInput.value = b.dataset.name;
+      refresh();
+      nameInput.focus();
+    });
+  });
+
+  refresh();
+})();
+</script>
+</body>
+</html>

@@ -1,0 +1,263 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Power Church · Visit Stats</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Anton&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+  :root {
+    --ink: #0d0d0d;
+    --moss: #ff6123;
+    --moss-2: #ff7a47;
+    --cream: #fef6ed;
+    --line: #f0d4b1;
+    --good: #16a34a;
+    --warn: #d97706;
+  }
+  body { background: var(--cream); color: var(--ink); font-family: 'Inter', system-ui, sans-serif; }
+  .pp { font-family: 'Anton', sans-serif; font-weight: 400; text-transform: uppercase; letter-spacing: 0.01em; line-height: 1.05; }
+  .mono { font-family: 'JetBrains Mono', ui-monospace, monospace; }
+  .accent-line { height: 4px; background: linear-gradient(90deg, var(--moss) 0%, var(--moss-2) 50%, transparent 100%); }
+  .card { background: white; border: 1px solid var(--line); }
+  .stat { transition: all 0.2s ease; }
+  .stat:hover { border-color: var(--moss); }
+  .pulse { animation: pulse 2s ease-in-out infinite; }
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.5; } }
+</style>
+</head>
+<body>
+
+<div class="max-w-6xl mx-auto px-4 sm:px-6 py-8 sm:py-12">
+
+  <header class="mb-8">
+    <a href="index.html" class="inline-flex items-center gap-2 mb-4 px-3 py-2 rounded-lg bg-white border border-[color:var(--line)] hover:border-[color:var(--moss)] text-stone-700 hover:text-[color:var(--moss)] text-xs font-bold uppercase tracking-wider transition-colors">
+      <span>←</span> Back to Packet
+    </a>
+    <div class="flex items-center gap-4 mb-3">
+      <img src="power-church-logo.png" alt="Power Church" style="height: 56px; width: auto;" />
+      <div>
+        <div class="text-xs uppercase tracking-[0.22em] text-[color:var(--moss)] font-bold">Power Church · Building Committee</div>
+        <div class="text-xs text-stone-500">Visit Analytics — UA Theater Packet</div>
+      </div>
+    </div>
+    <h1 class="pp text-4xl sm:text-5xl">Who Saw The Packet</h1>
+    <p class="mt-3 text-stone-700 text-sm sm:text-base max-w-3xl">
+      Live visit counts for the committee site. Every packet view, every PDF click, every device that opened the modeler.
+      Auto-refreshing every 60 seconds. Last updated: <span id="lastUpdate" class="mono font-semibold">loading…</span>
+    </p>
+    <div class="accent-line mt-4"></div>
+  </header>
+
+  <!-- Top-line counters -->
+  <div class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+    <div class="card stat rounded-2xl p-5">
+      <div class="text-[10px] uppercase tracking-[0.18em] text-stone-500 font-bold mb-1">Total Sessions</div>
+      <div class="pp text-4xl text-[color:var(--moss)]" id="totalSessions">—</div>
+      <div class="text-xs text-stone-500 mt-1">Unique-ish · 30-min window</div>
+    </div>
+    <div class="card stat rounded-2xl p-5">
+      <div class="text-[10px] uppercase tracking-[0.18em] text-stone-500 font-bold mb-1">Stayed 1+ Min</div>
+      <div class="pp text-4xl text-[color:var(--good)]" id="dwell60">—</div>
+      <div class="text-xs text-stone-500 mt-1">Read past the cover</div>
+    </div>
+    <div class="card stat rounded-2xl p-5">
+      <div class="text-[10px] uppercase tracking-[0.18em] text-stone-500 font-bold mb-1">Stayed 5+ Min</div>
+      <div class="pp text-4xl text-[color:var(--good)]" id="dwell5min">—</div>
+      <div class="text-xs text-stone-500 mt-1">Truly engaged</div>
+    </div>
+    <div class="card stat rounded-2xl p-5">
+      <div class="text-[10px] uppercase tracking-[0.18em] text-stone-500 font-bold mb-1">PDF Clicks</div>
+      <div class="pp text-4xl text-[color:var(--moss)]" id="pdfTotal">—</div>
+      <div class="text-xs text-stone-500 mt-1">Document downloads</div>
+    </div>
+  </div>
+
+  <!-- Per-page + Per-device -->
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-5 mb-8">
+    <div class="card rounded-2xl p-5">
+      <h2 class="pp text-2xl mb-3">By Page</h2>
+      <div class="space-y-2 text-sm">
+        <div class="flex justify-between border-b border-stone-100 py-2"><span>Landing page (index)</span><span id="pageHome" class="mono font-semibold">—</span></div>
+        <div class="flex justify-between border-b border-stone-100 py-2"><span>Interactive Modeler</span><span id="pageModeler" class="mono font-semibold">—</span></div>
+        <div class="flex justify-between border-b border-stone-100 py-2"><span>Link generator</span><span id="pageTrack" class="mono font-semibold">—</span></div>
+        <div class="flex justify-between py-2"><span>This stats page</span><span id="pageStats" class="mono font-semibold">—</span></div>
+      </div>
+    </div>
+    <div class="card rounded-2xl p-5">
+      <h2 class="pp text-2xl mb-3">By Device</h2>
+      <div class="space-y-2 text-sm">
+        <div class="flex justify-between border-b border-stone-100 py-2"><span>Desktop / laptop</span><span id="deviceDesktop" class="mono font-semibold">—</span></div>
+        <div class="flex justify-between border-b border-stone-100 py-2"><span>Phone</span><span id="deviceMobile" class="mono font-semibold">—</span></div>
+        <div class="flex justify-between py-2"><span>Tablet</span><span id="deviceTablet" class="mono font-semibold">—</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Per-recipient (named tags) -->
+  <div class="card rounded-2xl p-5 mb-8">
+    <h2 class="pp text-2xl mb-1">By Named Recipient</h2>
+    <p class="text-xs text-stone-500 mb-3">Each visit tagged with <span class="mono">?v=name</span> shows up here. Use the <a href="track.html" class="text-[color:var(--moss)] font-bold hover:underline">link generator</a> to make tagged URLs before sending.</p>
+    <div id="tagList" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 text-sm">
+      <div class="text-stone-500 italic col-span-full text-center py-4">Loading…</div>
+    </div>
+  </div>
+
+  <!-- PDF document clicks -->
+  <div class="card rounded-2xl p-5 mb-8">
+    <h2 class="pp text-2xl mb-3">PDF Documents Opened</h2>
+    <div id="pdfList" class="space-y-2 text-sm">
+      <div class="text-stone-500 italic">Loading…</div>
+    </div>
+  </div>
+
+  <!-- Time-on-page funnel -->
+  <div class="card rounded-2xl p-5 mb-8">
+    <h2 class="pp text-2xl mb-3">Time-on-Site Funnel</h2>
+    <p class="text-xs text-stone-500 mb-3">Of every visit, what percent stayed long enough to read the packet?</p>
+    <div class="space-y-3" id="dwellFunnel">
+      <div class="text-stone-500 italic">Loading…</div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="text-xs text-stone-500 text-center space-y-1 mt-12 pt-6 border-t border-[color:var(--line)]">
+    <div>Counts are pulled live from a public counter (no logins, no cookies, no tracking pixels in the legal sense).</div>
+    <div>If a number reads 0 it means no one has visited that path since the counter started — that's normal on day 1.</div>
+    <div class="text-[10px] text-stone-400">Data updates every 60 seconds · <span id="autoRefresh" class="pulse">●</span> live</div>
+  </div>
+</div>
+
+<script src="js/analytics.js"></script>
+<script>
+(function () {
+  const a = window.__pcAnalytics;
+  if (!a) return;
+
+  function fmt(n) { return (n || 0).toLocaleString('en-US'); }
+  function pct(num, den) { if (!den || den === 0) return '—'; return Math.round((num / den) * 100) + '%'; }
+
+  function setText(id, val) {
+    const el = document.getElementById(id);
+    if (el) el.textContent = val;
+  }
+
+  async function refresh() {
+    try {
+      const counts = {};
+      const keys = [
+        'total-sessions',
+        'page-home', 'page-modeler', 'page-track', 'page-stats',
+        'device-desktop', 'device-mobile', 'device-tablet',
+        'dwell-30s', 'dwell-60s', 'dwell-2min', 'dwell-5min',
+        'pdf-1-committee-packet', 'pdf-5-loan-packet', 'pdf-5b-loan-packet-seller-carry',
+        'pdf-3-seller-pitch', 'pdf-0-pro-forma-detail', 'pdf-2-bank-submission'
+      ];
+
+      // Common named tags + try-and-display approach for unknown ones
+      const knownTags = ['anonymous', 'manny', 'committee', 'toby', 'deeter', 'raul-aaf', 'tracy-bivins', 'anb', 'anb-underwriter', 'anb-pratt', 'cinergy', 'board', 'press'];
+      knownTags.forEach(t => keys.push('tag-' + t));
+
+      const fetches = keys.map(k => a.getCount(k).then(v => counts[k] = v));
+      await Promise.all(fetches);
+
+      // Top-line cards
+      const totalSessions = counts['total-sessions'] || 0;
+      setText('totalSessions', fmt(totalSessions));
+      setText('dwell60', fmt(counts['dwell-60s']));
+      setText('dwell5min', fmt(counts['dwell-5min']));
+
+      // Sum all pdf clicks
+      const pdfTotal = Object.keys(counts)
+        .filter(k => k.startsWith('pdf-') && !k.includes('-tag-'))
+        .reduce((acc, k) => acc + (counts[k] || 0), 0);
+      setText('pdfTotal', fmt(pdfTotal));
+
+      // Per-page
+      setText('pageHome', fmt(counts['page-home']));
+      setText('pageModeler', fmt(counts['page-modeler']));
+      setText('pageTrack', fmt(counts['page-track']));
+      setText('pageStats', fmt(counts['page-stats']));
+
+      // Per-device
+      setText('deviceDesktop', fmt(counts['device-desktop']));
+      setText('deviceMobile', fmt(counts['device-mobile']));
+      setText('deviceTablet', fmt(counts['device-tablet']));
+
+      // Tags list
+      const tagListEl = document.getElementById('tagList');
+      const tagRows = knownTags
+        .map(t => ({ tag: t, count: counts['tag-' + t] || 0 }))
+        .filter(r => r.count > 0 || r.tag === 'anonymous')
+        .sort((a, b) => b.count - a.count);
+
+      if (tagRows.length === 0 || (tagRows.length === 1 && tagRows[0].count === 0)) {
+        tagListEl.innerHTML = '<div class="text-stone-500 italic col-span-full text-center py-4">No tagged visits yet — use the <a href="track.html" class="text-[color:var(--moss)] underline">link generator</a> to send tagged URLs.</div>';
+      } else {
+        tagListEl.innerHTML = tagRows.map(r => {
+          const label = r.tag === 'anonymous' ? '(no tag — direct visit)' : r.tag.replace(/-/g, ' ');
+          return `<div class="flex justify-between items-center bg-stone-50 rounded-lg px-3 py-2">
+            <span class="capitalize">${label}</span>
+            <span class="mono font-bold text-[color:var(--moss)]">${fmt(r.count)}</span>
+          </div>`;
+        }).join('');
+      }
+
+      // PDF list
+      const pdfRows = [
+        { key: 'pdf-1-committee-packet', label: 'Committee Packet' },
+        { key: 'pdf-5-loan-packet', label: 'Loan Packet — Conventional' },
+        { key: 'pdf-5b-loan-packet-seller-carry', label: 'Loan Packet — Seller-Carry Alternative' },
+        { key: 'pdf-3-seller-pitch', label: 'Seller Pitch' },
+        { key: 'pdf-0-pro-forma-detail', label: 'Pro Forma Detail' },
+        { key: 'pdf-2-bank-submission', label: 'Earlier Bank Submission' }
+      ];
+      const pdfListEl = document.getElementById('pdfList');
+      pdfListEl.innerHTML = pdfRows.map(r => {
+        const c = counts[r.key] || 0;
+        return `<div class="flex justify-between items-center border-b border-stone-100 py-2">
+          <span>${r.label}</span>
+          <span class="mono font-semibold">${fmt(c)}</span>
+        </div>`;
+      }).join('');
+
+      // Dwell funnel
+      const dwellEl = document.getElementById('dwellFunnel');
+      const buckets = [
+        { key: 'dwell-30s', label: 'Stayed 30+ seconds' },
+        { key: 'dwell-60s', label: 'Stayed 1+ minute' },
+        { key: 'dwell-2min', label: 'Stayed 2+ minutes' },
+        { key: 'dwell-5min', label: 'Stayed 5+ minutes' }
+      ];
+      dwellEl.innerHTML = buckets.map(b => {
+        const c = counts[b.key] || 0;
+        const p = pct(c, totalSessions);
+        const w = totalSessions ? Math.min(100, (c / totalSessions) * 100) : 0;
+        return `
+          <div>
+            <div class="flex justify-between text-sm mb-1">
+              <span>${b.label}</span>
+              <span class="mono"><span class="font-semibold">${fmt(c)}</span> <span class="text-stone-400">(${p})</span></span>
+            </div>
+            <div class="h-2 bg-stone-100 rounded-full overflow-hidden">
+              <div class="h-full" style="background: linear-gradient(90deg, var(--moss) 0%, var(--moss-2) 100%); width: ${w}%; transition: width 0.6s ease;"></div>
+            </div>
+          </div>
+        `;
+      }).join('');
+
+      // Last update
+      setText('lastUpdate', new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', second: '2-digit' }));
+    } catch (e) {
+      console.error('Stats refresh failed', e);
+    }
+  }
+
+  // Initial + interval
+  refresh();
+  setInterval(refresh, 60 * 1000);
+})();
+</script>
+</body>
+</html>
